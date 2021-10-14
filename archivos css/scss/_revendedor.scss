@@ -1,0 +1,90 @@
+.revendedoresgridCuatro{
+    background-color: $bgcolor2;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "revendedor revendedor"
+    "requisitos descuentos";
+    .revendedoresgridDos{
+        grid-area: revendedor ;
+        padding-left: 20px;
+        padding-right:10px;
+        .letraMayus1{
+            @include letra1 (2rem);
+        }
+        .videoUno{
+            float: right;
+            padding: 10px;
+            height: 300px;
+        }
+        .parrafoUno{
+            line-height: 2em;
+        }
+        .modalUno{
+            padding: 30px;
+            .modalDos{
+                background-color:$bgcolor3 ;
+                color: $bgcolor2;
+                height: 60px;
+                width: 250px;
+                font-size:1.2rem;
+            }
+            .modalDos:hover{
+                background-color: $bgcolor1;
+                color: $bgcolor5;
+            }
+            .modalTres{
+                background-color: $bgcolor2;
+                .modalCinco{
+                    background:linear-gradient($bgcolor1, $bgcolor3);
+                }
+                .modalCuatro{
+                    color: $bgcolor2;
+                }
+            }
+        }
+    }
+    .revendedoresgridTres{
+        grid-area: requisitos;
+        border-top: solid $bgcolor5 2px;
+        padding: 3rem;
+        font-size: 1.8rem;
+        ol{
+            margin: 0;
+            padding: 0;
+            width: 500px;
+        }
+        .letraMayus2{
+            @include letra1 (1rem);
+        }
+    }
+    .revendedoresGrid{
+        grid-area: descuentos;
+        border-top: solid $bgcolor5 2px;
+        padding: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        div{
+            .letraMayus1{
+                @include letra1 (1rem);
+            }
+            .tablaDos{
+                display: table;
+                border-collapse: separate;
+                height: 180px;
+                width: 600px;
+                .tablaUno{
+                    th{
+                        color:$color2;
+                        padding: 10px;
+                    }
+                    td{
+                        color:$color2;
+                        padding: 10px;
+                    }
+                }
+            }
+        }          
+    }
+}

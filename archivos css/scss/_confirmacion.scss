@@ -1,0 +1,29 @@
+.confirmacionUno{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 5%;
+    height: 800px;
+    background-color: $bgcolor2;
+    .confirmacionDos{
+        height: 400px;
+        width: 800px;
+        background-color: $bgcolor6;
+        text-align: center;
+        .confirmacionTres{
+            height: 200px;
+        }
+        .confirmacionCuatro{
+            font-size:3rem;
+            color: #03a544;
+        }
+        .confirmacionSeis{
+            font-size:1.5rem;
+        }
+        .confirmacionSiete{
+            color: #03a544;
+            text-decoration: underline;
+        }
+    }
+}

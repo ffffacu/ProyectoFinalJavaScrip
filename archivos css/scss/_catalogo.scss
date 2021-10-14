@@ -1,0 +1,220 @@
+@mixin catUno () {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        padding: 0;
+}
+
+@mixin catDos () {
+        padding: 5px;
+        margin: 50px 8px 50px 8px;
+        border: dotted $bgcolor5 1.5px;
+        font-size: 1.5rem;
+        text-align: center;
+        transition: all 1s ease;
+        margin: 11px;
+}
+
+@mixin catTres {
+        transform: scale(1.1,1.1);
+        background:linear-gradient($bgcolor1, $bgcolor3);
+        color: $color2;
+        
+}
+.catalogoCuatro{
+    @include cataUno ();
+    .catalogoUno{
+        padding: 5px;
+        margin: 50px 8px 50px 8px;
+        border: dotted $bgcolor5 1.5px;
+        transition: all 1s ease;
+        a{
+            color: $color1;
+        }
+        a:hover{
+            color: $color2;
+        }
+    }
+    .catalogoUno:hover{
+        @include gradient ();
+    }
+    .catUno:hover{
+        transform: translate(30px) scale(1.2,1.2);
+    }
+    .catDos:hover{
+        transform: translate(-30px) scale(1.2,1.2);
+    }
+}
+.catalogoTres{
+    @include cataUno ();
+    .catalogoDos{
+        padding: 5px;
+        margin: 50px 8px 50px 8px;
+        border: dotted $bgcolor5 1.5px;
+        transition: all 1s ease;
+        a{
+            color: $color1;
+        }
+        a:hover{
+            color: $color2;
+        }
+    }
+    .catalogoDos:hover{
+        @include gradient ();
+    }
+    .catTres:hover{
+        transform: translate(30px) scale(1.2,1.2);
+    }
+    .catCuatro:hover{
+        transform: translate(-30px) scale(1.2,1.2);
+    }
+}
+.arosTres{
+    .arosUno{
+        @include catUno ();
+        .arosDos{
+            @include catDos ();
+        }
+        .arosDos:hover{
+            @include catTres ();
+        }
+        .botonUno{
+            color: $color1;
+        }
+        .botonUno:hover{
+            background-color: $bgcolor1;
+            color: $color2;
+        }
+    }
+}
+.anilloUno{
+    .anilloDos{
+        @include catUno ();
+        .anilloTres{
+            @include catDos ();
+        }
+        .anilloTres:hover{
+            @include catTres ();
+        }
+        .botonUno{
+            color: $color1;
+        }
+        .botonUno:hover{
+            background-color: $bgcolor1;
+            color: $color2;
+        }
+    }
+}
+.cadenaUno{
+    .cadenaDos{
+        @include catUno ();
+        .cadenaTres{
+            @include catDos ();
+        }
+        .cadenaTres:hover{
+            @include catTres ();
+        }
+        .botonUno{
+            color: $color1;
+        }
+        .botonUno:hover{
+            background-color: $bgcolor1;
+            color: $color2;
+        }
+    }
+}
+.dijesUno{
+    .dijesDos{
+        @include catUno ();
+        .dijesTres{
+            @include catDos ();
+        }
+        .dijesTres:hover{
+            @include catTres ();
+        }
+        .botonUno{
+            color: $color1;
+        }
+        .botonUno:hover{
+            background-color: $bgcolor1;
+            color: $color2;
+        }
+    }
+}
+.llaveroUno{
+    .llaveroDos{
+        @include catUno ();
+        .llaveroTres{
+            @include catDos ();
+        }
+        .llaveroTres:hover{
+            @include catTres ();
+        }
+        .botonUno{
+            color: $color1;
+        }
+        .botonUno:hover{
+            background-color: $bgcolor1;
+            color: $color2;
+        }
+    }
+}
+.sueltaUno{
+    .sueltaDos{
+        @include catUno ();
+        .sueltaTres{
+            @include catDos ();
+        }
+        .sueltaTres:hover{
+            @include catTres ();
+        }
+        .botonUno{
+            color: $color1;
+        }
+        .botonUno:hover{
+            background-color: $bgcolor1;
+            color: $color2;
+        }
+        p{
+            font-size:1.2rem;
+        }
+    }
+}
+.esotericosUno{ 
+    .esotericosDos{
+        @include catUno ();
+        .esotericosTres{
+            @include catDos ();
+            font-size: 1.3rem;
+        }
+        .esotericosTres:hover{
+            @include catTres ();
+        }
+        .botonUno{
+            color: $color1;
+        }
+        .botonUno:hover{
+            background-color: $bgcolor1;
+            color: $color2;
+        }
+    }
+}
+.escallasUno{
+    .escallasDos{
+        @include catUno ();
+        .escallasTres{
+            @include catDos ();
+        }
+        .escallasTres:hover{
+            @include catTres ();
+        }
+        .botonUno{
+            color: $color1;
+        }
+        .botonUno:hover{
+            background-color: $bgcolor1;
+            color: $color2;
+        }
+    }
+}

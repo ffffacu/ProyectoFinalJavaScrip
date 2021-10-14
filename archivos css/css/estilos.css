@@ -1,0 +1,1671 @@
+.revendedoresgridCuatro {
+  background-color: #D8E3E7;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "revendedor revendedor" "requisitos descuentos";
+}
+.revendedoresgridCuatro .revendedoresgridDos {
+  grid-area: revendedor;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.revendedoresgridCuatro .revendedoresgridDos .letraMayus1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "Poiret One", cursive;
+  padding: 2rem;
+}
+.revendedoresgridCuatro .revendedoresgridDos .videoUno {
+  float: right;
+  padding: 10px;
+  height: 300px;
+}
+.revendedoresgridCuatro .revendedoresgridDos .parrafoUno {
+  line-height: 2em;
+}
+.revendedoresgridCuatro .revendedoresgridDos .modalUno {
+  padding: 30px;
+}
+.revendedoresgridCuatro .revendedoresgridDos .modalUno .modalDos {
+  background-color: #126E82;
+  color: #D8E3E7;
+  height: 60px;
+  width: 250px;
+  font-size: 1.2rem;
+}
+.revendedoresgridCuatro .revendedoresgridDos .modalUno .modalDos:hover {
+  background-color: #51C4D3;
+  color: #000000;
+}
+.revendedoresgridCuatro .revendedoresgridDos .modalUno .modalTres {
+  background-color: #D8E3E7;
+}
+.revendedoresgridCuatro .revendedoresgridDos .modalUno .modalTres .modalCinco {
+  background: linear-gradient(#51C4D3, #126E82);
+}
+.revendedoresgridCuatro .revendedoresgridDos .modalUno .modalTres .modalCuatro {
+  color: #D8E3E7;
+}
+.revendedoresgridCuatro .revendedoresgridTres {
+  grid-area: requisitos;
+  border-top: solid #000000 2px;
+  padding: 3rem;
+  font-size: 1.8rem;
+}
+.revendedoresgridCuatro .revendedoresgridTres ol {
+  margin: 0;
+  padding: 0;
+  width: 500px;
+}
+.revendedoresgridCuatro .revendedoresgridTres .letraMayus2 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "Poiret One", cursive;
+  padding: 1rem;
+}
+.revendedoresgridCuatro .revendedoresGrid {
+  grid-area: descuentos;
+  border-top: solid #000000 2px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.revendedoresgridCuatro .revendedoresGrid div .letraMayus1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "Poiret One", cursive;
+  padding: 1rem;
+}
+.revendedoresgridCuatro .revendedoresGrid div .tablaDos {
+  display: table;
+  border-collapse: separate;
+  height: 180px;
+  width: 600px;
+}
+.revendedoresgridCuatro .revendedoresGrid div .tablaDos .tablaUno th {
+  color: #ffffff;
+  padding: 10px;
+}
+.revendedoresgridCuatro .revendedoresGrid div .tablaDos .tablaUno td {
+  color: #ffffff;
+  padding: 10px;
+}
+
+header {
+  background-color: #51C4D3;
+}
+header .imagenDos {
+  float: left;
+  height: 100px;
+}
+header .Berenice {
+  color: #150E56;
+  font-size: 40px;
+  word-spacing: 0.5cm;
+  font-family: "Poiret One", cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin-left: 5rem;
+}
+header nav {
+  font-weight: bold;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #126E82;
+}
+header nav .barraUno li a:hover {
+  color: #D8E3E7;
+  background-color: #51C4D3;
+  border-radius: 100%;
+}
+header nav ul li:hover ul {
+  display: block;
+}
+header nav .barraUno {
+  background-color: #126E82;
+  color: #D8E3E7;
+  list-style-type: none;
+  font-family: "Poiret One", cursive;
+  font-size: 1.5rem;
+  padding-left: 0;
+  padding-right: 10%;
+}
+header nav .barraUno .barraDos {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+header nav .barraUno .menuDes {
+  background-color: #126E82;
+  color: #D8E3E7;
+}
+header nav .barraUno ul li:hover ul {
+  display: block;
+}
+header nav .barraCuatro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.loginCuatro {
+  padding-left: 35%;
+  padding-right: 35%;
+  padding-bottom: 5%;
+}
+.loginCuatro .loginUno {
+  width: auto;
+  height: 15em;
+  border: solid 1px;
+}
+.loginCuatro .loginUno h2 {
+  text-align: center;
+}
+.loginCuatro .loginUno .loginTres .loginDos {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.quienSomosDos {
+  height: 300px;
+}
+.quienSomosDos .quienSomos {
+  text-align: center;
+  padding: 1rem;
+}
+
+.src {
+  width: 300px;
+  height: 300px;
+}
+
+.inicioCarusel {
+  padding: 20px;
+  height: 550px;
+  width: 100%;
+}
+.inicioCarusel .inicioCaruselTres {
+  width: 80%;
+  margin: 2% auto;
+}
+.inicioCarusel .inicioCaruselDos {
+  height: 450px;
+}
+
+.inicioTres {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.inicioTres .inicioUno {
+  padding: 5px;
+  margin: 50px 8px 50px 8px;
+  border: dotted #000000 1.5px;
+  text-align: center;
+  transition: all 1s ease;
+}
+.inicioTres .inicioUno .botonUno {
+  color: #02045f;
+}
+.inicioTres .inicioUno .botonUno:hover {
+  background-color: #51C4D3;
+  color: #ffffff;
+}
+.inicioTres .inicioUno:hover {
+  transform: scale(1.2, 1.2);
+  background: linear-gradient(#51C4D3, #126E82);
+  color: #ffffff;
+}
+.inicioTres .indUno:hover {
+  transform: translate(30px) scale(1.2, 1.2);
+}
+.inicioTres .indDos:hover {
+  transform: translate(-30px) scale(1.2, 1.2);
+}
+
+.inicioCuatro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.inicioCuatro .inicioDos {
+  padding: 5px;
+  margin: 50px 8px 50px 8px;
+  border: dotted #000000 1.5px;
+  text-align: center;
+  transition: all 1s ease;
+}
+.inicioCuatro .inicioDos .botonUno {
+  color: #02045f;
+}
+.inicioCuatro .inicioDos .botonUno:hover {
+  background-color: #51C4D3;
+  color: #ffffff;
+}
+.inicioCuatro .inicioDos:hover {
+  transform: scale(1.2, 1.2);
+  background: linear-gradient(#51C4D3, #126E82);
+  color: #ffffff;
+}
+.inicioCuatro .indTres:hover {
+  transform: translate(30px) scale(1.2, 1.2);
+}
+.inicioCuatro .indCuatro:hover {
+  transform: translate(-30px) scale(1.2, 1.2);
+}
+
+.regisTres {
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 5%;
+}
+.regisTres .registrarseUno {
+  width: auto;
+  height: 45em;
+  border: 1px solid;
+}
+.regisTres .registrarseUno h2 {
+  text-align: center;
+}
+.regisTres .registrarseUno .registrarseDos {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+.regisTres .registrarseUno .registrarseDos label {
+  text-align: center;
+}
+.regisTres .registrarseUno .registrarseDos .registrarseCuatro {
+  padding-right: 20px;
+  text-align: center;
+}
+.regisTres .registrarseUno .registrarseDos .registrarseCinco {
+  text-align: center;
+}
+.regisTres .registrarseUno .registrarseDos .registrarseCinco .registrarseTres {
+  height: 20px;
+  width: 20px;
+  margin-left: 5%;
+}
+
+section {
+  padding: 10px;
+}
+section .carroUno {
+  width: 100%;
+  height: 400px;
+  border: solid #000000 1px;
+  overflow: auto;
+}
+section .carroUno .carroTres .carroVacio {
+  text-align: center;
+  padding-top: 10%;
+}
+section .carroUno .carroTres div {
+  display: grid;
+  grid-template-columns: 50% 15% 25% 10%;
+  grid-template-rows: auto;
+  padding: 0.2rem;
+}
+section .carroUno .carroTres div h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+section .carroUno .carroTres div p {
+  font-size: 1.5rem;
+}
+section .carroUno .carroTres div .botonUno {
+  width: 20%;
+}
+section .carroUno .borrarDatos .borrarDatosDos {
+  padding: 1%;
+}
+section .carroUno .borrarDatos .borrarDatosDos .borrarDatosTres {
+  background-color: #126E82;
+  color: #D8E3E7;
+  font-size: 1.2rem;
+}
+section .carroUno .borrarDatos .borrarDatosDos .borrarDatosTres:hover {
+  background-color: #51C4D3;
+  color: #000000;
+}
+section .carroUno .borrarDatos .borrarDatosDos .modalTres {
+  background-color: #D8E3E7;
+}
+section .carroUno .borrarDatos .borrarDatosDos .modalTres .modalCinco {
+  background: linear-gradient(#51C4D3, #126E82);
+}
+section .carroUno .borrarDatos .borrarDatosDos .modalTres .modalCuatro {
+  color: #D8E3E7;
+}
+section .carroUno .borrarDatos .borrarDatosDos .modalTres .carritoFinal div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2%;
+}
+section .carroUno .borrarDatos .borrarDatosDos .modalTres .carritoFinal div div {
+  border: 1px solid;
+  padding: 3%;
+}
+section .carroUno .borrarDatos .borrarDatosDos .modalTres .totalCompra {
+  font-size: 1.5rem;
+}
+section .carroUno .borrarDatos .borrarDatosDos .modalTres .totalCompra .btonFinal {
+  background-color: #126E82;
+  color: #D8E3E7;
+  font-size: 1.2rem;
+}
+section .carroUno .borrarDatos .borrarDatosDos .modalTres .totalCompra .btonFinal .modalDos {
+  background-color: #126E82;
+  color: #D8E3E7;
+  height: 60px;
+  width: 250px;
+  font-size: 1.2rem;
+}
+section .carroUno .borrarDatos .borrarDatosDos .modalTres .totalCompra .btonFinal .modalDos:hover {
+  background-color: #51C4D3;
+  color: #000000;
+}
+section .carroUno .borrarDatos .borrarDatosDos .modalTres .totalCompra .btonFinal:hover {
+  background-color: #51C4D3;
+  color: #000000;
+}
+
+.politicasUno {
+  padding: 2%;
+}
+.politicasUno .politicasTres {
+  background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
+  color: #ffffff;
+}
+.politicasUno .envioDos {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.politicasUno .envioDos .envioUno {
+  height: 100px;
+}
+.politicasUno .devolucionUno {
+  height: 200px;
+}
+.politicasUno .devolucionUno img {
+  height: 200px;
+  float: right;
+  padding-right: 5%;
+}
+.politicasUno .tiempoUno {
+  height: 150px;
+}
+.politicasUno .tiempoUno img {
+  height: 100px;
+  float: right;
+}
+
+.carroCuatro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.carroCuatro .carroDos {
+  text-align: center;
+  padding: 5px;
+  margin: 50px 7px 50px 7px;
+  border: dotted #000000 1.5px;
+  transition: all 1s ease;
+}
+.carroCuatro .carroDos .botonUno {
+  color: #02045f;
+}
+.carroCuatro .carroDos .botonUno:hover {
+  background-color: #51C4D3;
+  color: #ffffff;
+}
+.carroCuatro .carroDos:hover {
+  transform: scale(1.2, 1.2);
+  background: linear-gradient(#51C4D3, #126E82);
+  color: #ffffff;
+}
+.carroCuatro .carUno:hover {
+  transform: translate(30px) scale(1.2, 1.2);
+}
+.carroCuatro .carDos:hover {
+  transform: translate(-30px) scale(1.2, 1.2);
+}
+
+.catalogoCuatro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.catalogoCuatro .catalogoUno {
+  padding: 5px;
+  margin: 50px 8px 50px 8px;
+  border: dotted #000000 1.5px;
+  transition: all 1s ease;
+}
+.catalogoCuatro .catalogoUno a {
+  color: #02045f;
+}
+.catalogoCuatro .catalogoUno a:hover {
+  color: #ffffff;
+}
+.catalogoCuatro .catalogoUno:hover {
+  transform: scale(1.2, 1.2);
+  background: linear-gradient(#51C4D3, #126E82);
+  color: #ffffff;
+}
+.catalogoCuatro .catUno:hover {
+  transform: translate(30px) scale(1.2, 1.2);
+}
+.catalogoCuatro .catDos:hover {
+  transform: translate(-30px) scale(1.2, 1.2);
+}
+
+.catalogoTres {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.catalogoTres .catalogoDos {
+  padding: 5px;
+  margin: 50px 8px 50px 8px;
+  border: dotted #000000 1.5px;
+  transition: all 1s ease;
+}
+.catalogoTres .catalogoDos a {
+  color: #02045f;
+}
+.catalogoTres .catalogoDos a:hover {
+  color: #ffffff;
+}
+.catalogoTres .catalogoDos:hover {
+  transform: scale(1.2, 1.2);
+  background: linear-gradient(#51C4D3, #126E82);
+  color: #ffffff;
+}
+.catalogoTres .catTres:hover {
+  transform: translate(30px) scale(1.2, 1.2);
+}
+.catalogoTres .catCuatro:hover {
+  transform: translate(-30px) scale(1.2, 1.2);
+}
+
+.arosTres .arosUno {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+}
+.arosTres .arosUno .arosDos {
+  padding: 5px;
+  margin: 50px 8px 50px 8px;
+  border: dotted #000000 1.5px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 1s ease;
+  margin: 11px;
+}
+.arosTres .arosUno .arosDos:hover {
+  transform: scale(1.1, 1.1);
+  background: linear-gradient(#51C4D3, #126E82);
+  color: #ffffff;
+}
+.arosTres .arosUno .botonUno {
+  color: #02045f;
+}
+.arosTres .arosUno .botonUno:hover {
+  background-color: #51C4D3;
+  color: #ffffff;
+}
+
+.anilloUno .anilloDos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+}
+.anilloUno .anilloDos .anilloTres {
+  padding: 5px;
+  margin: 50px 8px 50px 8px;
+  border: dotted #000000 1.5px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 1s ease;
+  margin: 11px;
+}
+.anilloUno .anilloDos .anilloTres:hover {
+  transform: scale(1.1, 1.1);
+  background: linear-gradient(#51C4D3, #126E82);
+  color: #ffffff;
+}
+.anilloUno .anilloDos .botonUno {
+  color: #02045f;
+}
+.anilloUno .anilloDos .botonUno:hover {
+  background-color: #51C4D3;
+  color: #ffffff;
+}
+
+.cadenaUno .cadenaDos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+}
+.cadenaUno .cadenaDos .cadenaTres {
+  padding: 5px;
+  margin: 50px 8px 50px 8px;
+  border: dotted #000000 1.5px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 1s ease;
+  margin: 11px;
+}
+.cadenaUno .cadenaDos .cadenaTres:hover {
+  transform: scale(1.1, 1.1);
+  background: linear-gradient(#51C4D3, #126E82);
+  color: #ffffff;
+}
+.cadenaUno .cadenaDos .botonUno {
+  color: #02045f;
+}
+.cadenaUno .cadenaDos .botonUno:hover {
+  background-color: #51C4D3;
+  color: #ffffff;
+}
+
+.dijesUno .dijesDos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+}
+.dijesUno .dijesDos .dijesTres {
+  padding: 5px;
+  margin: 50px 8px 50px 8px;
+  border: dotted #000000 1.5px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 1s ease;
+  margin: 11px;
+}
+.dijesUno .dijesDos .dijesTres:hover {
+  transform: scale(1.1, 1.1);
+  background: linear-gradient(#51C4D3, #126E82);
+  color: #ffffff;
+}
+.dijesUno .dijesDos .botonUno {
+  color: #02045f;
+}
+.dijesUno .dijesDos .botonUno:hover {
+  background-color: #51C4D3;
+  color: #ffffff;
+}
+
+.llaveroUno .llaveroDos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+}
+.llaveroUno .llaveroDos .llaveroTres {
+  padding: 5px;
+  margin: 50px 8px 50px 8px;
+  border: dotted #000000 1.5px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 1s ease;
+  margin: 11px;
+}
+.llaveroUno .llaveroDos .llaveroTres:hover {
+  transform: scale(1.1, 1.1);
+  background: linear-gradient(#51C4D3, #126E82);
+  color: #ffffff;
+}
+.llaveroUno .llaveroDos .botonUno {
+  color: #02045f;
+}
+.llaveroUno .llaveroDos .botonUno:hover {
+  background-color: #51C4D3;
+  color: #ffffff;
+}
+
+.sueltaUno .sueltaDos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+}
+.sueltaUno .sueltaDos .sueltaTres {
+  padding: 5px;
+  margin: 50px 8px 50px 8px;
+  border: dotted #000000 1.5px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 1s ease;
+  margin: 11px;
+}
+.sueltaUno .sueltaDos .sueltaTres:hover {
+  transform: scale(1.1, 1.1);
+  background: linear-gradient(#51C4D3, #126E82);
+  color: #ffffff;
+}
+.sueltaUno .sueltaDos .botonUno {
+  color: #02045f;
+}
+.sueltaUno .sueltaDos .botonUno:hover {
+  background-color: #51C4D3;
+  color: #ffffff;
+}
+.sueltaUno .sueltaDos p {
+  font-size: 1.2rem;
+}
+
+.esotericosUno .esotericosDos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+}
+.esotericosUno .esotericosDos .esotericosTres {
+  padding: 5px;
+  margin: 50px 8px 50px 8px;
+  border: dotted #000000 1.5px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 1s ease;
+  margin: 11px;
+  font-size: 1.3rem;
+}
+.esotericosUno .esotericosDos .esotericosTres:hover {
+  transform: scale(1.1, 1.1);
+  background: linear-gradient(#51C4D3, #126E82);
+  color: #ffffff;
+}
+.esotericosUno .esotericosDos .botonUno {
+  color: #02045f;
+}
+.esotericosUno .esotericosDos .botonUno:hover {
+  background-color: #51C4D3;
+  color: #ffffff;
+}
+
+.escallasUno .escallasDos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+}
+.escallasUno .escallasDos .escallasTres {
+  padding: 5px;
+  margin: 50px 8px 50px 8px;
+  border: dotted #000000 1.5px;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 1s ease;
+  margin: 11px;
+}
+.escallasUno .escallasDos .escallasTres:hover {
+  transform: scale(1.1, 1.1);
+  background: linear-gradient(#51C4D3, #126E82);
+  color: #ffffff;
+}
+.escallasUno .escallasDos .botonUno {
+  color: #02045f;
+}
+.escallasUno .escallasDos .botonUno:hover {
+  background-color: #51C4D3;
+  color: #ffffff;
+}
+
+.pieUno {
+  background-color: #132C33;
+  font-size: 1.2rem;
+}
+.pieUno .pieDose {
+  background-color: #132C33;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  padding-left: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.pieUno .pieDose .pieDos h4 {
+  padding-left: 30%;
+}
+.pieUno .pieDose .pieDos .pieCuatro {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+}
+.pieUno .pieDose .pieDos .pieCuatro .pieTres {
+  padding-bottom: 50px;
+}
+.pieUno .pieDose .pieDos .pieCuatro .pieTres a {
+  color: #ffffff;
+}
+.pieUno .pieDose .pieCinco h4 {
+  text-align: center;
+}
+.pieUno .pieDose .pieCinco .pieDiesyseis {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+}
+.pieUno .pieDose .pieCinco .pieDiesyseis .pieDiesyocho .pieDies li {
+  padding-top: 30px;
+}
+.pieUno .pieDose .pieCinco .pieDiesyseis .pieDiesyocho .pieDies li .pieNueve {
+  color: #ffffff;
+}
+.pieUno .pieDose .pieCinco .pieDiesyseis .pieDiesysiete .pieQuinse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  padding: 5px;
+}
+.pieUno .pieCatorse {
+  height: 5px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.pieUno .pieTrece {
+  background-color: #132C33;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  padding-left: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.pieUno .pieTrece .pieSeis .pieSiete {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pieUno .pieTrece .pieSeis .pieSiete .pieOcho {
+  padding-top: 50px;
+  padding-left: 50px;
+  opacity: 0.3;
+}
+.pieUno .pieTrece .pieSeis .pieSiete .pieOcho img {
+  height: 50px;
+}
+.pieUno .pieTrece .pieSeis .pieSiete .pieOcho:hover {
+  opacity: 1;
+}
+.pieUno .pieTrece .pieOnce {
+  padding: 0;
+}
+.pieUno .pieTrece .pieOnce a {
+  color: #ffffff;
+  opacity: 0.7;
+}
+.pieUno .pieTrece .pieOnce a:hover {
+  opacity: 1;
+}
+
+.confirmacionUno {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-top: 5%;
+  height: 800px;
+  background-color: #D8E3E7;
+}
+.confirmacionUno .confirmacionDos {
+  height: 400px;
+  width: 800px;
+  background-color: #cee5d0;
+  text-align: center;
+}
+.confirmacionUno .confirmacionDos .confirmacionTres {
+  height: 200px;
+}
+.confirmacionUno .confirmacionDos .confirmacionCuatro {
+  font-size: 3rem;
+  color: #03a544;
+}
+.confirmacionUno .confirmacionDos .confirmacionSeis {
+  font-size: 1.5rem;
+}
+.confirmacionUno .confirmacionDos .confirmacionSiete {
+  color: #03a544;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    font-size: 20px;
+  }
+  main h2 {
+    font-size: 20px;
+  }
+
+  .letraMinus {
+    font-size: 1rem;
+  }
+
+  .arosTres .arosUno {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    padding: 20px;
+  }
+
+  .anilloUno .anilloDos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    padding: 20px;
+  }
+
+  .cadenaUno .cadenaDos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    padding: 20px;
+  }
+
+  .dijesUno .dijesDos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    padding: 20px;
+  }
+
+  .llaveroUno .llaveroDos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    padding: 20px;
+  }
+
+  .sueltaUno .sueltaDos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    padding: 20px;
+  }
+
+  .esotericosUno .esotericosDos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    padding: 20px;
+  }
+
+  .escallasUno .escallasDos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    padding: 20px;
+  }
+
+  header .imagenDos {
+    width: 70px;
+    height: 70px;
+  }
+  header .Berenice {
+    font-size: 20px;
+    word-spacing: 0.3em;
+  }
+  header nav {
+    padding: 0;
+    margin: 0;
+  }
+  header nav .barraUno li a:hover {
+    border-radius: 0;
+  }
+  header nav .barraUno {
+    padding: 0;
+  }
+  header nav .barraUno .barraDos {
+    padding: 0;
+  }
+  header nav .barraCuatro .barraTres {
+    padding: 10px;
+  }
+
+  .inicioCarusel {
+    padding: 10px;
+    height: 200px;
+    width: 100%;
+  }
+  .inicioCarusel .inicioCaruselDos {
+    height: 170px;
+  }
+  .inicioCarusel .inicioCaruselTres {
+    width: 100%;
+    margin: 0;
+  }
+
+  .revendedoresgridCuatro {
+    display: flex;
+    flex-direction: column;
+  }
+  .revendedoresgridCuatro .revendedoresgridDos {
+    padding-right: 10px;
+  }
+  .revendedoresgridCuatro .revendedoresgridDos .videoUno {
+    width: 100%;
+    height: auto;
+    float: none;
+    padding: 10px;
+    margin: 0;
+  }
+  .revendedoresgridCuatro .revendedoresgridDos .letraMayus1 {
+    font-size: 15px;
+    padding: 0.5rem;
+  }
+  .revendedoresgridCuatro .revendedoresgridDos .parrafoUno {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .revendedoresgridCuatro .revendedoresgridDos .modalUno {
+    text-align: center;
+  }
+  .revendedoresgridCuatro .revendedoresgridDos .modalUno .modalDos {
+    height: 40px;
+    width: 200;
+    font-size: 1rem;
+  }
+  .revendedoresgridCuatro .revendedoresgridTres {
+    font-size: 0.8em;
+  }
+  .revendedoresgridCuatro .revendedoresgridTres .letraMayus2 {
+    padding-top: 1rem;
+    font-size: 15px;
+  }
+  .revendedoresgridCuatro .revendedoresgridTres ol {
+    width: 300px;
+  }
+  .revendedoresgridCuatro .revendedoresgridTres ol li {
+    font-size: 15px;
+  }
+  .revendedoresgridCuatro .revendedoresGrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    padding: 2rem;
+    font-size: 20px;
+  }
+  .revendedoresgridCuatro .revendedoresGrid div .letraMayus1 {
+    font-size: 15px;
+    padding-top: 1rem;
+  }
+  .revendedoresgridCuatro .revendedoresGrid div .letraMayus2 {
+    padding-top: 1rem;
+    font-size: 20px;
+    text-align: center;
+  }
+  .revendedoresgridCuatro .revendedoresGrid div .tablaDos {
+    font-size: 12px;
+    height: 50px;
+    width: 300px;
+  }
+
+  .pieUno {
+    font-size: 0.6rem;
+  }
+  .pieUno .pieDose {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .pieUno .pieDose .pieDos h4 {
+    padding: 0;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+  .pieUno .pieDose .pieDos .pieCuatro {
+    text-align: center;
+  }
+  .pieUno .pieDose .pieDos .pieCuatro .pieTres {
+    padding: 5px;
+  }
+  .pieUno .pieDose .pieCinco h4 {
+    font-size: 0.8rem;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+  .pieUno .pieDose .pieCinco .pieDiesyseis {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .pieUno .pieDose .pieCinco .pieDiesyseis .pieDiesyocho .pieDies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .pieUno .pieDose .pieCinco .pieDiesyseis .pieDiesyocho .pieDies li {
+    padding-top: 1px;
+  }
+  .pieUno .pieDose .pieCinco .pieDiesyseis .pieDiesyocho .pieDies .pieNueve img {
+    height: 15px;
+    width: 15px;
+  }
+  .pieUno .pieDose .pieCinco .pieDiesyseis .pieDiesysiete .pieQuinse {
+    padding-bottom: 10px;
+  }
+  .pieUno .pieDose .pieCinco .pieDiesyseis .pieDiesysiete .pieQuinse input {
+    width: 100%;
+  }
+  .pieUno .pieCatorse {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .pieUno .pieTrece {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    padding: 20px;
+    grid-template-areas: "pagos" "migas";
+  }
+  .pieUno .pieTrece .pieOnce {
+    margin: 0;
+    grid-area: migas;
+  }
+  .pieUno .pieTrece .pieOnce nav ol {
+    margin: 5px;
+  }
+  .pieUno .pieTrece .pieSeis {
+    grid-area: pagos;
+  }
+  .pieUno .pieTrece .pieSeis .pieSiete {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .pieUno .pieTrece .pieSeis .pieSiete .pieOcho {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0;
+  }
+  .pieUno .pieTrece .pieSeis .pieSiete .pieOcho img {
+    height: 20px;
+  }
+
+  .inicioTres .inicioUno:hover {
+    transform: scale(1.1, 1.1);
+  }
+  .inicioTres .indUno:hover {
+    transform: scale(1.1, 1.1);
+  }
+  .inicioTres .indDos:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  .inicioCuatro .indTres:hover {
+    transform: scale(1.1, 1.1);
+  }
+  .inicioCuatro .indCuatro:hover {
+    transform: scale(1.1, 1.1);
+  }
+  .inicioCuatro .inicioDos:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  main .catalogoCuatro .catalogoUno:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .catalogoCuatro .catUno:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .catalogoCuatro .catDos:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .catalogoTres .catTres:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .catalogoTres .catCuatro:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .catalogoTres .catalogoDos:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  main .politicasUno .envioDos .envioUno {
+    height: 70px;
+    padding: 10px;
+  }
+  main .politicasUno .devolucionUno {
+    height: 300px;
+  }
+  main .politicasUno .devolucionUno img {
+    height: 100px;
+  }
+  main .politicasUno .tiempoUno {
+    height: 300px;
+  }
+  main .politicasUno .tiempoUno img {
+    height: 100px;
+  }
+  main .carroCuatro .carroDos:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .carroCuatro .carUno:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .carroCuatro .carDos:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  .regisTres {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1rem;
+  }
+
+  .loginCuatro {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1rem;
+  }
+
+  .confirmacionUno {
+    height: 500px;
+  }
+  .confirmacionUno .confirmacionDos {
+    height: 300px;
+    width: 90%;
+  }
+  .confirmacionUno .confirmacionDos .confirmacionTres {
+    height: 100px;
+  }
+  .confirmacionUno .confirmacionDos .confirmacionCuatro {
+    font-size: 1.8rem;
+  }
+  .confirmacionUno .confirmacionDos .confirmacionSeis {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+  body {
+    font-size: 20px;
+  }
+
+  header .Berenice {
+    font-size: 40px;
+    word-spacing: 0.3em;
+  }
+  header nav {
+    padding: 0;
+    margin: 0;
+  }
+  header nav .barraUno {
+    padding: 0;
+  }
+  header nav .barraUno .barraDos {
+    padding: 0;
+  }
+  header nav .barraUno li a:hover {
+    border-radius: 0;
+  }
+
+  .inicioCarusel {
+    padding: 10px;
+    height: 400px;
+    width: 100%;
+  }
+  .inicioCarusel .inicioCaruselDos {
+    height: 350px;
+  }
+  .inicioCarusel .inicioCaruselTres {
+    width: 100%;
+    margin: 0;
+  }
+
+  .revendedoresgridCuatro {
+    display: flex;
+    flex-direction: column;
+  }
+  .revendedoresgridCuatro .revendedoresgridDos .letraMayus1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: "Poiret One", cursive;
+    padding: 1rem;
+  }
+  .revendedoresgridCuatro .revendedoresgridDos .parrafoUno {
+    font-size: 2rem;
+  }
+  .revendedoresgridCuatro .revendedoresgridDos .videoUno {
+    width: 100%;
+    height: auto;
+    float: none;
+    padding: 10px;
+    margin: 0;
+  }
+  .revendedoresgridCuatro .revemdedpresgridTres .letraMayus2 {
+    padding-top: 1rem;
+  }
+  .revendedoresgridCuatro .revendedoresGrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    padding-top: 1rem;
+  }
+
+  h2 {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    font-size: 20px;
+  }
+  main h2 {
+    font-size: 30px;
+    padding: 10px;
+  }
+  main .inicioTres {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+  main .inicioTres .inicioUno {
+    padding: 10px;
+    margin: 10px;
+    border: dotted #000000 1px;
+  }
+  main .inicioTres .inicioUno:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .inicioTres .indUno:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .inicioTres .indDos:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .inicioCuatro {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+  main .inicioCuatro .inicioDos {
+    padding: 10px;
+    margin: 10px;
+    border: dotted #000000 1px;
+  }
+  main .inicioCuatro .indTres:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .inicioCuatro .indCuatro:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .inicioCuatro .inicioDos:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  main {
+    font-size: 20px;
+  }
+  main h2 {
+    font-size: 30px;
+    padding: 10px;
+  }
+  main .catalogoTres {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  main .catalogoTres .catalogoDos {
+    padding: 10px;
+    margin: 10px;
+    border: dotted #000000 1px;
+  }
+  main .catalogoTres .catTres:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .catalogoTres .catCuatro:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .catalogoTres .catalogoDos:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .catalogoCuatro {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  main .catalogoCuatro .catalogoUno {
+    padding: 10px;
+    margin: 10px;
+    border: dotted #000000 1px;
+  }
+  main .catalogoCuatro .catalogoUno:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .catalogoCuatro .catUno:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .catalogoCuatro .catDos:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  .arosTres .arosUno .arosDos {
+    margin: 30px;
+  }
+
+  .anilloUno .anilloDos .anilloTres {
+    margin: 30px;
+  }
+
+  .cadenaUno .cadenaDos .cadenaTres {
+    margin: 30px;
+  }
+
+  .dijesUno .dijesDos .dijesTres {
+    margin: 30px;
+  }
+
+  .llaveroUno .llaveroDos .llaveroTres {
+    margin: 30px;
+  }
+
+  .sueltaUno .sueltaDos .sueltaTres {
+    margin: 30px;
+  }
+
+  .esotericosUno .esotericosDos .esotericosTres {
+    margin: 30px;
+  }
+
+  .escallasUno .escallasDos .escallasTres {
+    margin: 30px;
+  }
+
+  main {
+    font-size: 20px;
+  }
+  main h2 {
+    font-size: 30px;
+    padding: 10px;
+  }
+  main .carroCuatro {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  main .carroCuatro .carroDos {
+    padding: 10px;
+    margin: 10px;
+    border: dotted #000000 1px;
+  }
+  main .carroCuatro .carroDos:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .carroCuatro .carUno:hover {
+    transform: scale(1.1, 1.1);
+  }
+  main .carroCuatro .carDos:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+  .regisTres {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 1.2rem;
+  }
+
+  .loginCuatro {
+    padding-left: 30%;
+    padding-right: 30%;
+    font-size: 1.2rem;
+  }
+  .loginCuatro .loginUno {
+    height: 22em;
+  }
+
+  .pieUno {
+    font-size: 0.8rem;
+  }
+  .pieUno .pieDose {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .pieUno .pieDose .pieDos h4 {
+    padding: 0;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+  .pieUno .pieDose .pieDos .pieCuatro {
+    text-align: center;
+  }
+  .pieUno .pieDose .pieDos .pieCuatro .pieTres {
+    padding: 15px;
+  }
+  .pieUno .pieDose .pieCinco h4 {
+    font-size: 0.8rem;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+  .pieUno .pieDose .pieCinco .pieDiesyseis .pieDiesyocho .pieDies {
+    text-align: center;
+  }
+  .pieUno .pieDose .pieCinco .pieDiesyseis .pieDiesyocho .pieDies li {
+    padding-top: 20px;
+  }
+  .pieUno .pieDose .pieCinco .pieDiesyseis .pieDiesyocho .pieDies .pieNueve img {
+    height: 15px;
+    width: 15px;
+  }
+  .pieUno .pieDose .pieCinco .pieDiesyseis .pieDiesysiete .pieQuinse {
+    padding-bottom: 10px;
+  }
+  .pieUno .pieDose .pieCinco .pieDiesyseis .pieDiesysiete .pieQuinse input {
+    width: 100%;
+  }
+  .pieUno .pieCatorse {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+  }
+  .pieUno .pieTrece {
+    padding: 0;
+  }
+  .pieUno .pieTrece .pieOnce {
+    margin: 0;
+  }
+  .pieUno .pieTrece .pieSeis .pieSiete {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .pieUno .pieTrece .pieSeis .pieSiete .pieOcho {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .pieUno .pieTrece .pieSeis .pieSiete .pieOcho img {
+    height: 20px;
+  }
+
+  .confirmacionUno {
+    height: 500px;
+  }
+  .confirmacionUno .confirmacionDos {
+    height: 300px;
+    width: 90%;
+  }
+  .confirmacionUno .confirmacionDos .confirmacionTres {
+    height: 100px;
+  }
+  .confirmacionUno .confirmacionDos .confirmacionCuatro {
+    font-size: 2rem;
+  }
+  .confirmacionUno .confirmacionDos .confirmacionSeis {
+    font-size: 1.2rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #51C4D3;
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  margin: 0%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  background-color: #D8E3E7;
+}
+
+h1, h2, h4 {
+  font-family: "Poiret One", cursive;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  padding-left: 20px;
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: none;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+li {
+  padding: 6px;
+}
+
+a {
+  text-decoration: none;
+  color: #126E82;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-family: "Poiret One", cursive;
+  font-size: 25px;
+  padding-bottom: 50px;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 22px;
+  padding: 5px;
+}
+
+th {
+  background-color: #7fcec5;
+  background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
+  font-weight: bold;
+  color: #000000;
+}
+
+td {
+  background-color: #7fcec5;
+  background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
+  font-weight: bold;
+  color: #000000;
+}
+
+ol {
+  list-style-type: upper-roman;
+  list-style-position: inside;
+  font-weight: bold;
+  margin: 50px;
+}
+
+h5 {
+  font-family: "Poiret One", cursive;
+}
+
+section {
+  color: #02045f;
+}
+
+hr {
+  background-color: #cee5d0;
+  border-top: 0.5px solid #000000;
+  margin: 0;
+  padding: 0;
+  opacity: 0.8;
+}
+
+.tituloAlert {
+  font-size: 2rem;
+}
+
+.logTres {
+  text-align: center;
+}
+
+#client {
+  float: right;
+  padding-right: 2%;
+  font-size: 1.3rem;
+}/*# sourceMappingURL=estilos.css.map */

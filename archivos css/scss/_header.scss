@@ -1,0 +1,56 @@
+header{
+    background-color: $bgcolor1;
+    .imagenDos{
+        float: left;
+        height: 100px;
+    }
+    .Berenice{
+        color: $color3;
+        font-size:40px;
+        word-spacing: 0.5cm;
+        font-family: 'Poiret One', cursive;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin-left: 5rem;
+    }
+    nav {
+        font-weight: bold;
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: $bgcolor3;
+        .barraUno li a:hover{
+            color:$bgcolor2;
+            background-color: $bgcolor1;
+            border-radius: 100%;
+        }
+        ul li:hover ul {
+            display:block;
+        }
+        .barraUno {
+            background-color: $bgcolor3;
+            color: $bgcolor2;
+            list-style-type: none;
+            font-family: 'Poiret One', cursive;
+            font-size: 1.5rem;
+            padding-left: 0;
+            padding-right: 10%;
+            .barraDos{
+                padding-right: 40px;
+                padding-left: 40px;
+            }
+            .menuDes{
+                background-color: $bgcolor3;
+                color:$bgcolor2;}
+            ul li:hover ul {
+                display:block;
+            }
+        }
+        .barraCuatro{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+    }
+} 

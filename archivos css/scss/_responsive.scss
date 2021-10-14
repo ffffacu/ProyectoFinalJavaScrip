@@ -1,0 +1,718 @@
+@mixin catCuatro () {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        font-size:20px;
+        h2 {
+        font-size: 20px;
+    }
+    }
+    .letraMinus{
+        font-size: 1rem;
+    }
+    .arosTres{
+        .arosUno{
+            @include catCuatro ();
+            }
+        }
+    .anilloUno{
+        .anilloDos{
+            @include catCuatro ();
+            }
+        }
+    .cadenaUno{
+        .cadenaDos{
+            @include catCuatro ();
+            }
+        }
+    .dijesUno{
+        .dijesDos{
+            @include catCuatro ();
+        }
+    }
+    .llaveroUno{
+        .llaveroDos{
+            @include catCuatro ();
+        }
+    }
+    .sueltaUno{
+        .sueltaDos{
+            @include catCuatro ();
+        }
+    }
+    .esotericosUno{
+        .esotericosDos{
+            @include catCuatro ();
+        }
+    }
+    .escallasUno{
+        .escallasDos{
+            @include catCuatro ();
+        }
+    }
+    header{
+        .imagenDos{
+            width: 70px;
+            height: 70px;
+        }
+        .Berenice{
+            font-size: 20px;
+            word-spacing: 0.3em;
+        }
+        nav{
+            padding: 0;
+            margin: 0;
+            .barraUno li a:hover{
+                border-radius: 0;
+            }
+            .barraUno{
+                padding: 0;
+                .barraDos{
+                    padding: 0;
+                }
+            }
+            .barraCuatro{
+                .barraTres{
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    .inicioCarusel{
+        padding: 10px;
+        height: 200px;
+        width: 100%;
+        .inicioCaruselDos{
+            height: 170px;
+        }
+        .inicioCaruselTres{
+            width: 100%;
+            margin: 0;
+        }
+    }
+    .revendedoresgridCuatro{
+        display: flex;
+        flex-direction: column;
+        .revendedoresgridDos{
+            padding-right: 10px;
+            .videoUno{
+                width: 100%; 
+                height: auto;
+                float: none;
+                padding: 10px;
+                margin: 0;
+            }
+            .letraMayus1{
+                font-size: 15px;
+                padding: 0.5rem;
+            }
+            .parrafoUno{
+                font-size: 1rem;
+                text-align: center;
+            }
+            .modalUno{
+                text-align: center;
+                .modalDos{
+                    height: 40px;
+                    width: 200;
+                    font-size:1rem;
+                }
+            }
+        }
+        .revendedoresgridTres{
+            font-size: 0.8em;
+            .letraMayus2{
+                padding-top: 1rem;
+                font-size: 15px;
+            }
+            ol{
+                width: 300px;
+                li{
+                font-size:15px
+                }
+            }
+        }
+        .revendedoresGrid{
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            padding: 2rem;
+            font-size:20px;
+            div{
+                .letraMayus1{
+                    font-size: 15px;
+                    padding-top: 1rem;
+                }
+                .letraMayus2{
+                    padding-top: 1rem;
+                    font-size: 20px;
+                    text-align: center;
+                }
+                .tablaDos{
+                    font-size: 12px;
+                    height:50px;
+                    width: 300px;
+                }
+            }
+        }
+    }
+    .pieUno{
+        font-size:0.6rem;
+        .pieDose{
+            display: flex;
+            flex-direction:column;
+            padding: 0;
+            .pieDos{
+                h4{
+                    padding: 0;
+                    text-align: center;
+                    font-size: 0.8rem;
+                    padding:10px;
+                }
+                .pieCuatro{
+                    text-align: center;
+                    .pieTres{
+                        padding: 5px;
+                    }
+                }
+                
+            }
+            .pieCinco{
+                h4{
+                    font-size: 0.8rem;
+                    padding: 0;
+                    padding-bottom: 30px;
+                }
+                .pieDiesyseis{
+                    display: flex;
+                    flex-direction:column;
+                    flex-wrap: nowrap;
+                    .pieDiesyocho{
+                        .pieDies{
+                            display: flex;
+                            flex-direction:row;
+                            flex-wrap: wrap;
+                            justify-content:center;
+                            li{
+                                padding-top: 1px;
+                            }
+                            .pieNueve{
+                                img{
+                                    height: 15px;
+                                    width: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .pieDiesysiete{
+                        .pieQuinse{
+                            padding-bottom: 10px;
+                            input{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .pieCatorse{
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .pieTrece{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+            padding: 20px;
+            grid-template-areas: "pagos"
+            "migas";
+            .pieOnce{
+            margin: 0;
+            grid-area: migas;
+            nav{
+                ol{
+                    margin: 5px;
+                }
+            }
+            }
+            .pieSeis{
+                grid-area:pagos;
+                .pieSiete{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    .pieOcho{
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        padding-top: 0;
+                        img{
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .inicioTres{
+        .inicioUno:hover{
+            transform: scale(1.1,1.1);
+        }
+        .indUno:hover{
+            transform:scale(1.1,1.1);
+        }
+        .indDos:hover{
+            transform:scale(1.1,1.1);
+        }
+    }
+    .inicioCuatro{
+        .indTres:hover{
+            transform:scale(1.1,1.1);
+        }
+        .indCuatro:hover{
+            transform:scale(1.1,1.1);
+        }
+        .inicioDos:hover{
+            transform: scale(1.1,1.1);
+        }
+    }
+    main{
+        .catalogoCuatro{
+            .catalogoUno:hover{
+            transform: scale(1.1,1.1);
+            }
+            .catUno:hover{
+                transform:scale(1.1,1.1);
+            }
+            .catDos:hover{
+                transform:scale(1.1,1.1);
+            }
+        }
+        .catalogoTres{
+            .catTres:hover{
+                transform:scale(1.1,1.1);
+            }
+            .catCuatro:hover{
+                transform:scale(1.1,1.1);
+            }
+        .catalogoDos:hover{
+                transform: scale(1.1,1.1);
+            }
+        }
+    }
+    main{
+        .politicasUno{
+            .envioDos{
+                .envioUno{
+                    height: 70px;
+                    padding: 10px;
+                }
+            }
+            .devolucionUno{
+                height: 300px;
+                img{
+                    height: 100px;
+                }
+            }
+            .tiempoUno{
+                height: 300px;
+                img{
+                    height: 100px;
+                }
+            }
+        }
+        .carroCuatro{
+                .carroDos:hover{
+                    transform: scale(1.1,1.1);
+                }
+                .carUno:hover{
+                    transform:scale(1.1,1.1);
+                }
+                .carDos:hover{
+                    transform:scale(1.1,1.1);
+                }
+            }
+        }
+    .regisTres{
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 1rem;
+        }
+    .loginCuatro{
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 1rem;
+    }
+.confirmacionUno{
+    height: 500px;
+        .confirmacionDos{
+        height: 300px;
+        width: 90%;
+            .confirmacionTres{
+                height: 100px;
+            }
+            .confirmacionCuatro{
+            font-size: 1.8rem;
+            }
+            .confirmacionSeis{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1080px){
+    body {
+        font-size:20px;
+    }
+    header{
+        .Berenice{
+            font-size: 40px;
+            word-spacing: 0.3em;
+        }
+        nav{
+            padding: 0;
+            margin: 0;
+            .barraUno{
+                padding: 0;
+                .barraDos{
+                    padding: 0;
+                }
+            }
+            .barraUno li a:hover{
+                border-radius: 0;
+            }
+        }
+    }
+    .inicioCarusel{
+        padding: 10px;
+        height: 400px;
+        width: 100%;
+        .inicioCaruselDos{
+            height: 350px;
+        }
+        .inicioCaruselTres{
+            width: 100%;
+            margin: 0;
+        }
+    }
+    .revendedoresgridCuatro{
+        display: flex;
+        flex-direction: column;
+        .revendedoresgridDos{
+            .letraMayus1{
+                @include letra1 (1rem);
+            }
+            .parrafoUno{
+                font-size:2rem;
+            }
+            .videoUno{
+                width: 100%; 
+                height: auto;
+                float: none;
+                padding: 10px;
+                margin: 0;
+            }
+        }
+        .revemdedpresgridTres{
+            .letraMayus2{
+                padding-top: 1rem;
+            }
+        }
+        .revendedoresGrid{
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            padding-top: 1rem;
+        }
+    }
+    h2 {
+        font-size: 20px;
+        padding: 10px;
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    main{
+        font-size:20px;
+        h2 {
+            font-size: 30px;
+            padding: 10px;
+        }
+    .inicioTres{
+        @include gridDos ();
+        .inicioUno{
+            padding: 10px;
+            margin: 10px;
+            border: dotted $bgcolor5 1px;
+        }
+        .inicioUno:hover{
+            transform: scale(1.1,1.1);
+            }
+        .indUno:hover{
+            transform:scale(1.1,1.1);
+        }
+        .indDos:hover{
+            transform:scale(1.1,1.1);
+        }
+    }
+    .inicioCuatro{
+        @include gridDos ();
+        .inicioDos{
+            padding: 10px;
+            margin: 10px;
+            border: dotted $bgcolor5 1px;
+        }
+        .indTres:hover{
+            transform:scale(1.1,1.1);
+        }
+        .indCuatro:hover{
+            transform:scale(1.1,1.1);
+        }
+        .inicioDos:hover{
+            transform: scale(1.1,1.1);
+        }
+        
+    }
+    }
+    main{
+        font-size:20px;
+        h2 {
+            font-size: 30px;
+            padding: 10px;
+        }
+    .catalogoTres{
+        @include gridUno ();
+        .catalogoDos{
+            padding: 10px;
+            margin: 10px;
+            border: dotted $bgcolor5 1px;
+        }
+        .catTres:hover{
+            transform:scale(1.1,1.1);
+        }
+        .catCuatro:hover{
+            transform:scale(1.1,1.1);
+        }
+        .catalogoDos:hover{
+            transform: scale(1.1,1.1);
+        }
+    }
+    .catalogoCuatro{
+            @include gridUno ();
+            .catalogoUno{    
+                padding: 10px;
+                margin: 10px;
+                border: dotted $bgcolor5 1px;
+            }
+            .catalogoUno:hover{    
+                transform: scale(1.1,1.1);
+                }
+                .catUno:hover{
+                    transform:scale(1.1,1.1);
+                }
+                .catDos:hover{
+                    transform:scale(1.1,1.1);
+                }
+            }
+    }
+    .arosTres{
+        .arosUno{
+            .arosDos{
+                margin:30px;
+            }
+        }
+    }
+    .anilloUno{
+        .anilloDos{
+            .anilloTres{
+                margin:30px;
+            }
+        }
+    }
+    .cadenaUno{
+        .cadenaDos{
+            .cadenaTres{
+                margin:30px;
+            }
+        }
+    }
+    .dijesUno{
+        .dijesDos{
+            .dijesTres{
+                margin:30px;
+            }
+        }
+    }
+    .llaveroUno{
+        .llaveroDos{
+            .llaveroTres{
+                margin:30px;
+            }
+        }
+    }
+    .sueltaUno{
+        .sueltaDos{
+            .sueltaTres{
+                margin:30px;
+            }
+        }
+    }
+    .esotericosUno{ 
+        .esotericosDos{
+            .esotericosTres{
+                margin:30px;
+            }
+        }
+    }
+    .escallasUno{
+        .escallasDos{
+            .escallasTres{
+                margin:30px;
+            }
+        }
+    }
+    main{
+        font-size:20px;
+        h2 {
+            font-size: 30px;
+            padding: 10px;
+        }
+        .carroCuatro{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            .carroDos{
+                padding: 10px;
+                margin: 10px;
+                border: dotted $bgcolor5 1px;
+            }
+            .carroDos:hover{
+                transform: scale(1.1,1.1);
+            }
+            .carUno:hover{
+                transform:scale(1.1,1.1);
+            }
+            .carDos:hover{
+                transform:scale(1.1,1.1);
+            }
+        }
+    }
+    .regisTres{
+        padding-left: 15%;
+        padding-right: 15%;
+        font-size: 1.2rem;
+        }
+    .loginCuatro{
+        padding-left: 30%;
+        padding-right: 30%;
+        font-size: 1.2rem;
+        .loginUno{
+            height: 22em;
+        }
+    }
+        .pieUno{
+        font-size:0.8rem;
+        .pieDose{
+            display: flex;
+            flex-direction:column;
+            padding: 0;
+            .pieDos{
+                h4{
+                    padding: 0;
+                    text-align: center;
+                    font-size: 0.8rem;
+                    padding:10px;
+                }
+                .pieCuatro{
+                    text-align: center;
+                    .pieTres{
+                        padding: 15px;
+                    }
+                }
+                
+            }
+            .pieCinco{
+                h4{
+                    font-size: 0.8rem;
+                    padding: 0;
+                    padding-bottom: 30px;
+                }
+                .pieDiesyseis{
+                    .pieDiesyocho{
+                        .pieDies{
+                            text-align: center;
+                            li{
+                                padding-top: 20px;
+                            }
+                            .pieNueve{
+                                img{
+                                    height: 15px;
+                                    width: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .pieDiesysiete{
+                        .pieQuinse{
+                            padding-bottom: 10px;
+                            input{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .pieCatorse{
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 2%;
+        }
+        .pieTrece{
+            padding: 0;
+            .pieOnce{
+            margin: 0;
+            }
+            .pieSeis{
+                .pieSiete{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    .pieOcho{
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        img{
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .confirmacionUno{
+        height: 500px;
+            .confirmacionDos{
+            height: 300px;
+            width: 90%;
+                .confirmacionTres{
+                    height: 100px;
+                }
+                .confirmacionCuatro{
+                font-size: 2rem;
+                }
+                .confirmacionSeis{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+}

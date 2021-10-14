@@ -1,0 +1,75 @@
+    .quienSomosDos{
+        height: 300px;
+        .quienSomos{
+        text-align: center;
+        padding: 1rem;
+    }
+}
+.src{
+    width:300px;
+    height: 300px;
+}
+.inicioCarusel{
+    padding: 20px;
+    height: 550px;
+    width: 100%;
+    .inicioCaruselTres{
+        width: 80%;
+        margin: 2% auto;
+    }
+    .inicioCaruselDos{
+        height: 450px;
+    }
+}
+.inicioTres{
+    @include cataUno ();
+    .inicioUno{
+        padding: 5px;
+        margin: 50px 8px 50px 8px;
+        border: dotted $bgcolor5 1.5px;
+        text-align: center;
+        transition: all 1s ease;
+        .botonUno{
+            color: $color1;
+        }
+        .botonUno:hover{
+            background-color: $bgcolor1;
+            color: $color2;
+        }
+    }
+    .inicioUno:hover{
+        @include gradient ();
+    }
+    .indUno:hover{
+        transform: translate(30px) scale(1.2,1.2);
+    }
+    .indDos:hover{
+        transform: translate(-30px) scale(1.2,1.2);
+    }
+}
+.inicioCuatro{
+    @include cataUno ();
+    .inicioDos{
+        padding: 5px;
+        margin: 50px 8px 50px 8px;
+        border: dotted $bgcolor5 1.5px;
+        text-align: center;
+        transition: all 1s ease;
+        .botonUno{
+            color: $color1;
+        }
+        .botonUno:hover{
+            background-color: $bgcolor1;
+            color: $color2;
+        }
+    }
+    .inicioDos:hover{
+        @include gradient ();
+    }
+    .indTres:hover{
+        transform: translate(30px) scale(1.2,1.2);
+    }
+    .indCuatro:hover{
+        transform: translate(-30px) scale(1.2,1.2);
+    }
+}

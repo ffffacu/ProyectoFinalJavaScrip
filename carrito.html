@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="aros,abridores,anillos, dijes, pulseras, llaveros, rosarios, cruces, denarios, Cadenas acero, Tiras de ágatas facetadas, Tira de bolitas hexagonal, fluorita, cristales checos, cuarzo rosa, malaquita rolado, obsidiana negra, amatista, citrino, aqua aura angel, fucsia, amazonita, coral, kunzita rosa, granate, nacar, rodocrosita, piedra lunar, turmalina verde, 7 chakras, cuarzo estallado, aragonito estrella, lapizlazuli">
+    <meta name="author" content="Facundo Javier Gomez">
+    <meta name="Copyright" content="Facundo Javier Gomez">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="archivos css/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Poiret+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="archivos css/css/estilos.css">
+    <title>Berenice Carrito</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="imagenDos animate__animated animate__fadeInLeft" src="fotos/logo pagina.jpg"
+                alt="logo pagina" width="100px"></a>
+        <h1 class="Berenice animate__animated animate__fadeInDown">Berenice Piedras Preciosas</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-link" href="index.html"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="barraUno navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="barraDos nav-link" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                        <li class="barraDos nav-item">
+                            <a class="nav-link" aria-current="page" href="catalogo.html">CATALOGO</a>
+                        </li>
+                        <li class="barraDos nav-item">
+                            <a class="nav-link" href="revendedores.html">REVENDEDORES</a>
+                        </li>
+                        <li class="barraDos nav-item">
+                            <a class="nav-link" href="carrito.html">CARRITO</a>
+                        </li>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="barraDos nav-link dropdown-toggle" href="login.html" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cuenta
+                            </a>
+                            <ul class="dropdown-menu barraUno" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item menuDes" href="login.html">Iniciar Sesion</a></li>
+                                <li><a class="dropdown-item menuDes" href="registrarse.html">Registrarse</a></li>
+                            </ul>
+                        </li>
+                        <div class="barraCuatro">
+                            <li class="nav-item barraTres">
+                                <a class="nav-link" rel="tooltip" title="Consulta por Whatsapp" data-placement="bottom"
+                                    href="https://wa.me/01158203866" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <p class="d-lg-none d-xl-none"></p>
+                                </a>
+                            </li>
+                            <li class="nav-item barraTres">
+                                <a class="nav-link" rel="tooltip" title="Seguinos en Facebook" data-placement="bottom"
+                                    href="https://www.facebook.com/liliana236piedra" target="_blank">
+                                    <i class="fab fa-facebook-square"></i>
+                                    <p class="d-lg-none d-xl-none"></p>
+                                </a>
+                            </li>
+                            <li class="nav-item barraTres">
+                                <a class="nav-link" rel="tooltip" title="Seguinos en Instagram" data-placement="bottom"
+                                    href="https://www.instagram.com/berenicepiedrassemipresiosas" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                    <p class="d-lg-none d-xl-none"></p>
+                                </a>
+                            </li> 
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h2>Carrito</h2>
+            </div>
+            <fieldset class="carroUno">
+                <div id="car" class="carroTres">
+                </div>
+                <div class="borrarDatos" id="js-borraDatos">
+                </div>
+                <br>
+                <br>
+            </fieldset>
+        </section>
+        <section>
+            <div>
+                <h2 class="politicasDos">Politicas de Envio</h2>
+            </div>
+        </section>
+        <section class="politicasUno">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header politicasTres" id="flush-headingOne">
+                        <button class="accordion-button collapsed politicasTres" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Forma de Envío
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>Los envíos se realizan a través de las siguientes empresas a cargo del comprador</p>
+                            <div class="envioDos">
+                                <div>
+                                    <img class="envioUno" src="fotos/formas de envio/carrito3.png" alt="via cargo">
+                                </div>
+                                <div>
+                                    <img class="envioUno" src="fotos/formas de envio/carrito2.png" alt="Integral Pack">
+                                </div>
+                                <div>
+                                    <img class="envioUno" src="fotos/formas de envio/carrito1.png" alt="correo Oca">
+                                </div>
+                            </div>
+                            <p>Si desea retiro en domicilio al comprar aclarar en la observación de la compra</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header politicasTres" id="flush-headingTwo">
+                        <button class="accordion-button collapsed politicasTres" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Devoluciones
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="devolucionUno">
+                                <img src="fotos/formas de envio/carrito5.jpg" alt="caja"> Las devoluciones sólo serán
+                                solicitadas en el caso de que el producto llegue en estado deteriorado por la forma de
+                                envío o que la mercadería no sea la solicitada. Antes de comprar, asegúrese de comprobar
+                                cada producto agregado.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header politicasTres" id="flush-headingThree">
+                        <button class="accordion-button collapsed politicasTres" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Tiempo de Entregas
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="tiempoUno">
+                                <img src="fotos/formas de envio/carrito4.png" alt="tiempo">Cada pedido será preparado
+                                por
+                                orden de llegada, una vez recibidos el plazo de entrega es de 3 a 5 días dependiendo el
+                                trasporte y la localidad.
+                                En el caso de que la opción de entrega sea retiro en domicilio, en el trascurso de 24hs,
+                                se te enviará un email avisando que tu pedido está listo para ser retirado.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2>
+                Productos Destacados
+            </h2>
+        </section>
+        <section class="carroCuatro">
+            <div class="carroDos carUno">
+                <img src="fotos/carrito/llavero de amatista.jpg" alt="llavero de amatista" width="300px" height="300px">
+                <p>Llavero de amatista</p>
+                <p><strong>$280</strong></p>
+                <button type="button" class="btn btn-outline-dark botonUno">Añadir al carrito</button>
+            </div>
+            <div class="carroDos">
+                <img src="fotos/carrito/Aros de turmalina negra.jpg" alt="aros turmalina" width="300px" height="300px">
+                <p>Aros de turmalina negra</p>
+                <p><strong>$320</strong></p>
+                <button type="button" class="btn btn-outline-dark botonUno">Añadir al carrito</button>
+            </div>
+            <div class="carroDos">
+                <img src="fotos/carrito/Corazon con baño de plata.jpg" alt="Corazon baño de plata" width="300px"
+                    height="300px">
+                <p>Corazón con baño de plata</p>
+                <p><strong>$330</strong></p>
+                <button type="button" class="btn btn-outline-dark botonUno">Añadir al carrito</button>
+            </div>
+            <div class="carroDos carDos">
+                <img src="fotos/carrito/Dijes de aqua aura arcoiris.jpg" alt="dijes arcoiris" width="300px"
+                    height="300px">
+                <p>Dijes aura arcoiris</p>
+                <p><strong>$240</strong></p>
+                <button type="button" class="btn btn-outline-dark botonUno">Añadir al carrito</button>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer id="footer" class="pieUno">
+        <section class="pieDose">
+            <div class="pieDos">
+                <h4>Catalogo</h4>
+                <ul class="pieCuatro">
+                    <li class="pieTres">
+                        <a href="anillos.html"> Anillos</a>
+                    </li>
+                    <li class="pieTres">
+                        <a href="aros.html"> Aros</a>
+                    </li>
+                    <li class="pieTres">
+                        <a href="cadenas.html">Cadenas de acero</a>
+                    </li>
+                    <li class="pieTres">
+                        <a href="dijes.html">Dijes</a>
+                    </li>
+                    <li class="pieTres">
+                        <a href="escallas.html">Escallas</a>
+                    </li>
+                    <li class="pieTres">
+                        <a href="esotericos.html">Esotericos</a>
+                    </li>
+                    <li class="pieTres">
+                        <a href="llaveros.html">Llaveros</a>
+                    </li>
+                    <li class="pieTres">
+                        <a href="piedrassueltas.html">Piedras sueltas</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pieCinco">
+                <h4>Contacto</h4>
+                <div class="pieDiesyseis">
+                    <div class="pieDiesyocho">
+                        <ul class="pieDies">
+                            <li>
+                                <a class="pieNueve" href="https://www.facebook.com/liliana236piedra"
+                                    target="_blank"><img src="fotos/logos/logo 2.png" alt="Facebook" height="30rem"
+                                        width="30rem">Facebook</a>
+                            </li>
+                            <li>
+                                <a class="pieNueve" href="https://wa.me/01158203866" target="_blank"><img
+                                        src="fotos/logos/logo 1.png" alt="Whatsapp" height="30rem"
+                                        width="30rem">Whatsapp</a>
+                            </li>
+                            <li>
+                                <a class="pieNueve" href="https://www.instagram.com/berenicepiedrassemipresiosas"
+                                    target="_blank"><img src="fotos/logos/logo 3.png" alt="Instagram" height="30rem"
+                                        width="30rem">Instagram</a>
+                            </li>
+                            <li>
+                                <a class="pieNueve" href="https://outlook.live.com/owa/" target="_blank"><img
+                                        src="fotos/logos/logo 4.png" alt="Email" height="30rem" width="30rem">Email</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pieDiesysiete">
+                        <form action="*">
+                            <div class="pieQuinse">
+                                <label for="Nombre">Nombre</label>
+                                <input type="text" name="Nombre" required>
+                            </div>
+                            <div class="pieQuinse">
+                                <label for="Email">Email</label>
+                                <input type="text" name="Email" required>
+                            </div>
+                            <div class="pieQuinse">
+                                <label for="escribe tu consulta">Tu mensaje</label>
+                                <textarea name="escribe tu Consulta" id="" cols="10" rows="4"
+                                    maxlength="200"></textarea>
+                            </div>
+                            <div class="pieQuinse">
+                                <input class="regisUno" type="Submit" value="Enviar">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="pieCatorse">
+        <section class="pieTrece">
+            <div class="pieOnce">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Carrito</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="pieSeis">
+                <ul class="pieSiete">
+                    <li class="pieOcho">
+                        <img src="fotos/logos/metodos de pago/mercadopago.png" alt="">
+                    </li>
+                    <li class="pieOcho">
+                        <img src="fotos/logos/metodos de pago/mastercard.png" alt="">
+                    </li>
+                    <li class="pieOcho">
+                        <img src="fotos/logos/metodos de pago/visa.png" alt="">
+                    </li>
+                    <li class="pieOcho">
+                        <img src="fotos/logos/metodos de pago/tranfer.png" alt="">
+                    </li>
+                    <li class="pieOcho">
+                        <img src="fotos/logos/metodos de pago/uala.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="archivos css/java/carrito.js"></script>
+    <script src="archivos css/js/bootstrap.js"></script>
+</body>
+
+</html>
