@@ -1,3 +1,4 @@
+userOnline = [];
 
 $("#loginUser").submit(function (e) {
     e.preventDefault();
@@ -23,6 +24,15 @@ $("#loginUser").submit(function (e) {
 });
 
 function ingresar (user){
+        userOnline= sessionStorage.getItem ("userOnline");
+        if(!userOnline){
+            userOnline = [];
+        }else{
+            userOnline=JSON.parse(userOnline);
+        }
+        let clientOnline = {nombre: user}
+        userOnline.push(clientOnline);
+        userOnline=JSON.stringify(userOnline);
+        sessionStorage.setItem('userOnline', userOnline);
         $("#client").prepend(`Bienvenido ${user}`);
-
 }

@@ -3,3 +3,4 @@ const anillosDos = document.getElementById ("js-anillosDos");
 
 renderHTML (anillos, anillosDos);
 
+

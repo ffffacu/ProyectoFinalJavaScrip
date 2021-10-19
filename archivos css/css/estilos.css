@@ -1668,4 +1668,19 @@ hr {
   float: right;
   padding-right: 2%;
   font-size: 1.3rem;
+}
+
+.mainAsaide {
+  display: grid;
+  grid-template-columns: 13% 87%;
+  grid-template-rows: auto;
+  grid-template-areas: "asaide menu";
+}
+.mainAsaide .asaidePrincipal {
+  grid-area: asaide;
+  background-color: #D8E3E7;
+  border-right: 1px solid;
+}
+.mainAsaide .anilloUno {
+  grid-area: menu;
 }/*# sourceMappingURL=estilos.css.map */
