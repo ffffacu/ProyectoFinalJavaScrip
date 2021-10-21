@@ -51,8 +51,10 @@ const totalCompra = () => {
                     <div class="modal-footer modalCinco totalCompra">
                     <button type="button" class="btn btn-secondary bg-danger modalCuatro"
                     data-bs-dismiss="modal">Atras</button>
-                            <button type="button" class="btn btn-primary modalDos btonFinal"><a class="modalDos"
-                            href="carrito.html">Fin de la compra</a></button>
+                    <button type="button" class="btn btn-primary modalDos btonFinal" id="totalDolar">Total en dolares</button>
+                            <button type="button" class="btn btn-primary modalDos btonFinal" id="totalPesos">Total en pesos</button>
+                            <button type="button" class="btn btn-primary modalDos btonFinal" id="btnFinal" style="display: none"><a class="modalDos"
+                            href="index.html">Fin de la compra</a></button>
                     </div>
                 </div>
             </div>
@@ -67,13 +69,31 @@ const totalCompra = () => {
         </div>
         `)
     }
-    let bton = document.getElementsByClassName("btonFinal");
-    bton= addEventListener("click", clickFinCompra);
-    function clickFinCompra (){
+
+    $("#btnFinal").click(function clickFinCompra (){
         localStorage.clear();
+    })
+
+    let butt= document.getElementById("totalPesos");
+    butt.addEventListener("click", clickFinCompra, { once: true });
+    function clickFinCompra() {
+        $(".totalCompra").append(`<p> Total en pesos con IVA $${parseInt(total*1.21)}</p>`)
+        $("#btnFinal").show(); 
     }
-    
-    $(".totalCompra").append(`<p> Total con IVA $${parseInt(total*1.21)}</p>`)
+
+    /*Consumiento Api Dolar */
+
+    const geturl = "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
+
+    $.get(geturl, function(respuesta, estado){
+        const dolarBlue =parseInt(respuesta[1].casa.venta)
+        let butDolar = document.getElementById("totalDolar");
+        butDolar.addEventListener("click", clickFinCompra, { once: true });
+        function clickFinCompra() {
+        $(".totalCompra").append(`<p> Total en dolar Blue $${parseInt(total*1.21/dolarBlue)}</p>`)
+        $("#btnFinal").show(); 
+        }
+    })
     }
 }   
 

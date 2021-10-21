@@ -28,9 +28,15 @@ const renderHTML = (productos, contenedor) => {
         }
 
 
+    /*Cantidad seleccionada*/
+
 $(".cant").change(function (e) { 
     return quantity = e.target.value
 });
+
+
+    /*Funcion de boton Agregado al carrito*/
+
 
 let but = document.querySelectorAll(".botonUno");
 but.forEach((element) => {
@@ -54,6 +60,8 @@ but.forEach((element) => {
             localStorage.setItem('cart' , cart );
     }
 
+    /*funcion de buscador de productos */
+
     const filtrarBusqueda =()=>{
         const texto = buscador.value;
         const filterProduc = productos.filter((product) =>{
@@ -66,7 +74,34 @@ but.forEach((element) => {
 
 btnBuscador.addEventListener('click' , filtrarBusqueda);
 buscador.addEventListener('keyup', filtrarBusqueda);
-    
+
+    /*Filtro por precios*/
+
+    function filtrePrecio (){
+    $('#btnRadio').on( 'click', function () {
+        let filtroPrec = document.filterPrecio.precio;
+        for (let i=0; i< filtroPrec.length; i++){
+            if(filterPrecio.precio[i].checked)
+            {
+                const option= filterPrecio.precio[i].value
+                switch (option){}
+                if(option == 1){
+                    const filterPrecio = productos.filter((product=> product.precio < 200));
+                    renderHTML (filterPrecio, contenedor);
+                }
+                if (option == 2){
+                    const filterPrecio = productos.filter((product=> product.precio <= 500));
+                    renderHTML (filterPrecio, contenedor);
+                }
+                if (option == 3){
+                    const filterPrecio = productos.filter((product=> product.precio > 0));
+                    renderHTML (filterPrecio, contenedor);
+                }
+            }
+        }
+    })
+}
+filtrePrecio ()
 }
 
 function login (user, pasword ){
@@ -81,7 +116,6 @@ function login (user, pasword ){
     }
     return bIniciarSesion;
 }
-
 
 
 

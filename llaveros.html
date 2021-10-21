@@ -81,132 +81,158 @@
                             </li>
                         </div>
                     </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" id="filtroBusqueda" type="search" placeholder="Buscá tu producto" aria-label="Search">
+                        <button class="btn btn-outline-success" id="btnBuscadorUno" type="button">Buscar</button>
+                    </form>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
-        <main class="llaveroUno">
-            <section class="llaveroDos" id="js-llaveroDos">
-            </section>
-        </main>
-        <footer id="footer" class="pieUno">
-            <section class="pieDose">
-                <div class="pieDos">
-                    <h4>Catalogo</h4>
-                    <ul class="pieCuatro">
-                        <li class="pieTres">
-                            <a href="anillos.html"> Anillos</a>
-                        </li>
-                        <li class="pieTres">
-                            <a href="aros.html"> Aros</a>
-                        </li>
-                        <li class="pieTres">
-                            <a href="cadenas.html">Cadenas de acero</a>
-                        </li>
-                        <li class="pieTres">
-                            <a href="dijes.html">Dijes</a>
-                        </li>
-                        <li class="pieTres">
-                            <a href="escallas.html">Escallas</a>
-                        </li>
-                        <li class="pieTres">
-                            <a href="esotericos.html">Esotericos</a>
-                        </li>
-                        <li class="pieTres">
-                            <a href="llaveros.html">Llaveros</a>
-                        </li>
-                        <li class="pieTres">
-                            <a href="piedrassueltas.html">Piedras sueltas</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="pieCinco">
-                    <h4>Contacto</h4>
-                    <div class="pieDiesyseis">
-                        <div class="pieDiesyocho">
-                            <ul class="pieDies">
-                                <li>
-                                    <a class="pieNueve" href="https://www.facebook.com/liliana236piedra"
-                                        target="_blank"><img src="fotos/logos/logo 2.png" alt="Facebook" height="30rem"
-                                            width="30rem">Facebook</a>
-                                </li>
-                                <li>
-                                    <a class="pieNueve" href="https://wa.me/01158203866" target="_blank"><img
-                                            src="fotos/logos/logo 1.png" alt="Whatsapp" height="30rem"
-                                            width="30rem">Whatsapp</a>
-                                </li>
-                                <li>
-                                    <a class="pieNueve" href="https://www.instagram.com/berenicepiedrassemipresiosas"
-                                        target="_blank"><img src="fotos/logos/logo 3.png" alt="Instagram" height="30rem"
-                                            width="30rem">Instagram</a>
-                                </li>
-                                <li>
-                                    <a class="pieNueve" href="https://outlook.live.com/owa/" target="_blank"><img
-                                            src="fotos/logos/logo 4.png" alt="Email" height="30rem"
-                                            width="30rem">Email</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="pieDiesysiete">
-                            <form action="*">
-                                <div class="pieQuinse">
-                                    <label for="Nombre">Nombre</label>
-                                    <input type="text" name="Nombre" required>
-                                </div>
-                                <div class="pieQuinse">
-                                    <label for="Email">Email</label>
-                                    <input type="text" name="Email" required>
-                                </div>
-                                <div class="pieQuinse">
-                                    <label for="escribe tu consulta">Tu mensaje</label>
-                                    <textarea name="escribe tu Consulta" id="" cols="10" rows="4"
-                                        maxlength="200"></textarea>
-                                </div>
-                                <div class="pieQuinse">
-                                    <input class="regisUno" type="Submit" value="Enviar">
-                                </div>
+    <main class="mainAsaide">
+        <aside class="asaidePrincipal">
+            <h2>Filtros</h2>
+            <div>
+                <form action="" name="filterPrecio">
+                    <p>Precio:</p>
+                    <div>
+                        <input class="FiltroPrecio" id="js-filtroPrecio" type="radio" name="precio" value="1">Hasta $200
+                    </div>
+                    <div>
+                        <input class="filtroPrecio" id="js-filtroPrecio" type="radio" name="precio" value="2">Hasta $500
+                    </div>
+                    <div>
+                        <input class="filtroPrecio" id="js-filtroPrecio" type="radio" name="precio" value="3">Mostrar
+                        Todos
+                    </div>
+                    <div>
+                        <div>
+                            <button type="button" id="btnRadio" class="btn btn-outline-success">Filtrar</button>
                         </div>
                     </div>
-                </div>
+                </form>
+        </aside>
+        <section class="llaveroUno">
+            <section class="llaveroDos" id="js-llaveroDos">
             </section>
-            <hr class="pieCatorse">
-            <section class="pieTrece">
-                <div class="pieOnce">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                            <li class="breadcrumb-item"><a href="catalogo.html">Catalogo</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Llaveros</li>
-                        </ol>
-                    </nav>
+        </section>
+    </main>
+    <footer id="footer" class="pieUno">
+        <section class="pieDose">
+            <div class="pieDos">
+                <h4>Catalogo</h4>
+                <ul class="pieCuatro">
+                    <li class="pieTres">
+                        <a href="anillos.html"> Anillos</a>
+                    </li>
+                    <li class="pieTres">
+                        <a href="aros.html"> Aros</a>
+                    </li>
+                    <li class="pieTres">
+                        <a href="cadenas.html">Cadenas de acero</a>
+                    </li>
+                    <li class="pieTres">
+                        <a href="dijes.html">Dijes</a>
+                    </li>
+                    <li class="pieTres">
+                        <a href="escallas.html">Escallas</a>
+                    </li>
+                    <li class="pieTres">
+                        <a href="esotericos.html">Esotericos</a>
+                    </li>
+                    <li class="pieTres">
+                        <a href="llaveros.html">Llaveros</a>
+                    </li>
+                    <li class="pieTres">
+                        <a href="piedrassueltas.html">Piedras sueltas</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pieCinco">
+                <h4>Contacto</h4>
+                <div class="pieDiesyseis">
+                    <div class="pieDiesyocho">
+                        <ul class="pieDies">
+                            <li>
+                                <a class="pieNueve" href="https://www.facebook.com/liliana236piedra"
+                                    target="_blank"><img src="fotos/logos/logo 2.png" alt="Facebook" height="30rem"
+                                        width="30rem">Facebook</a>
+                            </li>
+                            <li>
+                                <a class="pieNueve" href="https://wa.me/01158203866" target="_blank"><img
+                                        src="fotos/logos/logo 1.png" alt="Whatsapp" height="30rem"
+                                        width="30rem">Whatsapp</a>
+                            </li>
+                            <li>
+                                <a class="pieNueve" href="https://www.instagram.com/berenicepiedrassemipresiosas"
+                                    target="_blank"><img src="fotos/logos/logo 3.png" alt="Instagram" height="30rem"
+                                        width="30rem">Instagram</a>
+                            </li>
+                            <li>
+                                <a class="pieNueve" href="https://outlook.live.com/owa/" target="_blank"><img
+                                        src="fotos/logos/logo 4.png" alt="Email" height="30rem" width="30rem">Email</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pieDiesysiete">
+                        <form action="*">
+                            <div class="pieQuinse">
+                                <label for="Nombre">Nombre</label>
+                                <input type="text" name="Nombre" required>
+                            </div>
+                            <div class="pieQuinse">
+                                <label for="Email">Email</label>
+                                <input type="text" name="Email" required>
+                            </div>
+                            <div class="pieQuinse">
+                                <label for="escribe tu consulta">Tu mensaje</label>
+                                <textarea name="escribe tu Consulta" id="" cols="10" rows="4"
+                                    maxlength="200"></textarea>
+                            </div>
+                            <div class="pieQuinse">
+                                <input class="regisUno" type="Submit" value="Enviar">
+                            </div>
+                    </div>
                 </div>
-                <div class="pieSeis">
-                    <ul class="pieSiete">
-                        <li class="pieOcho">
-                            <img src="fotos/logos/metodos de pago/mercadopago.png" alt="">
-                        </li>
-                        <li class="pieOcho">
-                            <img src="fotos/logos/metodos de pago/mastercard.png" alt="">
-                        </li>
-                        <li class="pieOcho">
-                            <img src="fotos/logos/metodos de pago/visa.png" alt="">
-                        </li>
-                        <li class="pieOcho">
-                            <img src="fotos/logos/metodos de pago/tranfer.png" alt="">
-                        </li>
-                        <li class="pieOcho">
-                            <img src="fotos/logos/metodos de pago/uala.png" alt="">
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="archivos css/java/datostorege.js"></script>
+            </div>
+        </section>
+        <hr class="pieCatorse">
+        <section class="pieTrece">
+            <div class="pieOnce">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="catalogo.html">Catalogo</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Llaveros</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="pieSeis">
+                <ul class="pieSiete">
+                    <li class="pieOcho">
+                        <img src="fotos/logos/metodos de pago/mercadopago.png" alt="">
+                    </li>
+                    <li class="pieOcho">
+                        <img src="fotos/logos/metodos de pago/mastercard.png" alt="">
+                    </li>
+                    <li class="pieOcho">
+                        <img src="fotos/logos/metodos de pago/visa.png" alt="">
+                    </li>
+                    <li class="pieOcho">
+                        <img src="fotos/logos/metodos de pago/tranfer.png" alt="">
+                    </li>
+                    <li class="pieOcho">
+                        <img src="fotos/logos/metodos de pago/uala.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="archivos css/java/datostorege.js"></script>
     <script src="archivos css/java/funciones.js"></script>
     <script src="archivos css/java/llavero.js"></script>
-        <script src="archivos css/js/bootstrap.js"></script>
+    <script src="archivos css/js/bootstrap.js"></script>
 </body>
 
 </html>

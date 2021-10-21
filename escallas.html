@@ -81,13 +81,40 @@
                             </li>
                         </div>
                     </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" id="filtroBusqueda" type="search" placeholder="Buscá tu producto" aria-label="Search">
+                        <button class="btn btn-outline-success" id="btnBuscadorUno" type="button">Buscar</button>
+                    </form>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="escallasUno">
+    <main class="mainAsaide">
+        <aside class="asaidePrincipal">
+        <h2>Filtros</h2>
+    <div>
+    <form action="" name="filterPrecio">
+        <p>Precio:</p>
+        <div>
+        <input class="FiltroPrecio" id="js-filtroPrecio" type="radio" name="precio" value="1">Hasta $200
+        </div>
+        <div>
+        <input class="filtroPrecio" id="js-filtroPrecio" type="radio" name="precio" value="2">Hasta $500
+        </div>
+        <div>
+            <input class="filtroPrecio" id="js-filtroPrecio" type="radio" name="precio" value="3">Mostrar Todos
+            </div>
+        <div>
+        <div>
+            <button type="button" id="btnRadio" class="btn btn-outline-success">Filtrar</button>
+        </div>
+    </div>
+</form>
+    </aside>
+    <section class="escallasUno">
         <section class="escallasDos" id="js-escallasDos">
         </section>
+    </section>
     </main>
     <footer id="footer" class="pieUno">
         <section class="pieDose">
