@@ -1,4 +1,5 @@
 const cadenas = JSON.parse(dataCadenas);
-const cadenaDos = document.getElementById ("js-cadenasDos");
+const cadenaDos = document.getElementById("js-cadenasDos");
 
-renderHTML (cadenas, cadenaDos);
+localStorage.setItem("productos", JSON.stringify(cadenas));
+renderHTML(cadenas, cadenaDos);

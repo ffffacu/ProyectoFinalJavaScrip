@@ -1,4 +1,5 @@
 const sueltas = JSON.parse(datapiedrassueltas);
-const sueltaDos = document.getElementById ("js-sueltaDos");
+const sueltaDos = document.getElementById("js-sueltaDos");
 
-renderHTML (sueltas, sueltaDos);
+localStorage.setItem("productos", JSON.stringify(sueltas));
+renderHTML(sueltas, sueltaDos);

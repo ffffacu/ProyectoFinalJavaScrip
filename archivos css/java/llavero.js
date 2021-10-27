@@ -1,4 +1,5 @@
 const llavero = JSON.parse(dataLlaveros);
-const llaveroDos = document.getElementById ("js-llaveroDos");
+const llaveroDos = document.getElementById("js-llaveroDos");
 
-renderHTML (llavero, llaveroDos);
+localStorage.setItem("productos", JSON.stringify(llavero));
+renderHTML(llavero, llaveroDos);

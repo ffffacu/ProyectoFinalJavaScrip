@@ -1,4 +1,5 @@
 const dijes = JSON.parse(dataDijes);
-const dijesDos = document.getElementById ("js-dijesDos");
+const dijesDos = document.getElementById("js-dijesDos");
 
-renderHTML (dijes, dijesDos);
+localStorage.setItem("productos", JSON.stringify(dijes));
+renderHTML(dijes, dijesDos);

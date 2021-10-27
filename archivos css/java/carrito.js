@@ -1,34 +1,41 @@
-
 const totalCompra = () => {
-    let totalCompraFinal = localStorage.getItem('cart');
-    totalCompraFinal = JSON.parse (totalCompraFinal);
+  let totalCompraFinal = localStorage.getItem("cart");
+  totalCompraFinal = JSON.parse(totalCompraFinal);
 
-    if (!totalCompraFinal){
-        totalCompraFinal=[];
-        $("#car").append(`<h2 class="carroVacio">Carrito vacio</h2>`)
-    }else{
-        for (const produc of totalCompraFinal){
-            let contenedorProductos = document.createElement ("div");
-            contenedorProductos.innerHTML += ` <div class="carroSiete"><p>Producto: ${produc.producto.nombre}</p></div> 
-                                                <div class="carroSeis"><p> Cantidad: ${produc.cantidad}</p></div>
-                                                <div class="carroSiete"><p> Precio:$${parseInt(produc.cantidad)*produc.producto.precio} + IVA</p></div>
-                                                <button type="button" class="btn btn-outline-dark botonUno" id="${produc.producto.id}">X</button>
-    </div>`
-                                                
-                                    document.getElementById("car").appendChild(contenedorProductos);
-        }
+  if (!totalCompraFinal) {
+    totalCompraFinal = [];
+    $("#car").append(`<h2 class="carroVacio">Carrito vacio</h2>`);
+  } else {
+    for (const produc of totalCompraFinal) {
+      let contenedorProductos = document.createElement("div");
+      contenedorProductos.innerHTML += ` <div class="carroSiete"><p>Producto: ${
+        produc.producto.nombre
+      }</p></div> 
+                                                <div class="carroSeis"><p> Cantidad: ${
+                                                  produc.cantidad
+                                                }</p></div>
+                                                <div class="carroSiete"><p> Precio:$${
+                                                  parseInt(produc.cantidad) *
+                                                  produc.producto.precio
+                                                } + IVA</p></div>
+                                                <button type="button" class="btn btn-outline-dark botonUno" id="${
+                                                  produc.producto.id
+                                                }">X</button>
+    </div>`;
 
-        /*Total de la compra */
+      document.getElementById("car").appendChild(contenedorProductos);
+    }
 
-        let total= 0 ;
-        totalCompraFinal.forEach((totalCompra)=>{
-            total += parseInt(totalCompra.cantidad)*totalCompra.producto.precio;})
-        
-            
-            
-        /* Botton Finalizar Compra */
+    /*Total de la compra */
 
-        $("#js-borraDatos").append(`<div class="borrarDatosDos">
+    let total = 0;
+    totalCompraFinal.forEach((totalCompra) => {
+      total += parseInt(totalCompra.cantidad) * totalCompra.producto.precio;
+    });
+
+    /* Botton Finalizar Compra */
+
+    $("#js-borraDatos").append(`<div class="borrarDatosDos">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary modalDos borrarDatosTres" data-bs-toggle="modal"
             data-bs-target="#exampleModal">
@@ -61,31 +68,34 @@ const totalCompra = () => {
         </div>
     </div>`);
 
-    
     for (const produc of totalCompraFinal) {
-        $(".carritoFinal").append(`<div>
+      $(".carritoFinal").append(`<div>
         <div><p>${produc.producto.nombre} x ${produc.cantidad}</p></div>
-        <div><p>$${parseInt(produc.cantidad)*produc.producto.precio}</p></div>
+        <div><p>$${parseInt(produc.cantidad) * produc.producto.precio}</p></div>
         </div>
-        `)
+        `);
     }
 
-    $("#btnFinal").click(function clickFinCompra (){
-        localStorage.clear();
-    })
+    $("#btnFinal").click(function clickFinCompra() {
+      localStorage.clear();
+    });
 
-    let butt= document.getElementById("totalPesos");
+    let butt = document.getElementById("totalPesos");
     butt.addEventListener("click", clickFinCompra, { once: true });
     function clickFinCompra() {
-        $(".totalCompra").append(`<p> Total en pesos con IVA $${parseInt(total*1.21)}</p>`)
-        $("#btnFinal").show(); 
+      $(".totalCompra").append(
+        `<p> Total en pesos con IVA $${parseInt(total * 1.21)}</p>`
+      );
+      $("#btnFinal").show();
     }
 
     /*Consumiento Api Dolar */
 
-    const geturl = "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
+    const geturl =
+      "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
 
-    $.get(geturl, function(respuesta, estado){
+    $.get(geturl, function (respuesta, estado) {
+      if(estado === "success"){
         const dolarBlue =parseInt(respuesta[1].casa.venta)
         let butDolar = document.getElementById("totalDolar");
         butDolar.addEventListener("click", clickFinCompra, { once: true });
@@ -93,8 +103,9 @@ const totalCompra = () => {
         $(".totalCompra").append(`<p> Total en dolar Blue $${parseInt(total*1.21/dolarBlue)}</p>`)
         $("#btnFinal").show(); 
         }
-    })
     }
-}   
+    });
+  }
+};
 
-totalCompra ();
+totalCompra();

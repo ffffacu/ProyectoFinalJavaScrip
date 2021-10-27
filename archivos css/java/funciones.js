@@ -1,13 +1,16 @@
-const buscador = document.getElementById('filtroBusqueda');
-const btnBuscador = document.getElementById('btnBuscadorUno');
+const buscador = document.getElementById("filtroBusqueda");
+const btnBuscador = document.getElementById("btnBuscadorUno");
+let contenedorProductos;
 
 let cart = [];
 
 const renderHTML = (productos, contenedor) => {
-        contenedor.innerHTML ='';
-        if(productos.length > 0){
-            for (let producto of productos) {
-                const productoInHTML = `<div class=${producto.clas}>
+  console.log(productos);
+  contenedorProductos = contenedor;
+  contenedorProductos.innerHTML = "";
+  if (productos.length > 0) {
+    for (let producto of productos) {
+      const productoInHTML = `<div class=${producto.clas}>
                     <img class="src" src="${producto.imgSrc}">
                     <p>${producto.nombre}</p>
                     <p>$${producto.precio} + IVA</p>
@@ -21,102 +24,107 @@ const renderHTML = (productos, contenedor) => {
                     <button type="button" class="btn btn-outline-dark botonUno" id="${producto.id}">Añadir al carrito</button>
                 </div>
                 `;
-                contenedor.innerHTML += productoInHTML;
-            }
-        }else{
-            contenedor.innerHTML ='<p>No se encontro producto</p>'
-        }
+      contenedorProductos.innerHTML += productoInHTML;
+    }
+  } else {
+    contenedorProductos.innerHTML = "<p>No se encontro producto</p>";
+  }
+  /*Cantidad seleccionada*/
 
-
-    /*Cantidad seleccionada*/
-
-$(".cant").change(function (e) { 
-    return quantity = e.target.value
+$(".cant").change(function (e) {
+  return (quantity = e.target.value);
 });
 
-
-    /*Funcion de boton Agregado al carrito*/
-
+/*Funcion de boton Agregado al carrito*/
 
 let but = document.querySelectorAll(".botonUno");
 but.forEach((element) => {
-    element.addEventListener("click", respuestaClick);
+  element.addEventListener("click", respuestaClick);
 });
-    function respuestaClick(e) {
-    const producto = productos.find((element) => element.id == e.target.id)
-            cart= localStorage.getItem('cart');
-            if (!cart){
-                cart= [];
-            }else{
-                cart= JSON.parse(cart);
-            }
-            let carro = { cantidad:quantity , producto };
-            console.log(carro)
+function respuestaClick(e) {
+  const producto = productos.find((element) => element.id == e.target.id);
+  cart = localStorage.getItem("cart");
+  if (!cart) {
+    cart = [];
+  } else {
+    cart = JSON.parse(cart);
+  }
+  let carro = { cantidad: quantity, producto };
+  console.log(carro);
 
-            cart.push(carro);
+  cart.push(carro);
 
-            cart=JSON.stringify(cart);
-            
-            localStorage.setItem('cart' , cart );
-    }
+  cart = JSON.stringify(cart);
 
-    /*funcion de buscador de productos */
+  localStorage.setItem("cart", cart);
+}
 
-    const filtrarBusqueda =()=>{
-        const texto = buscador.value;
-        const filterProduc = productos.filter((product) =>{
-            const productName= product.nombre.toLowerCase();
-            return productName.includes(texto.toLowerCase())
-        })       
-        renderHTML (filterProduc, contenedor);
-    }
-    
+};
 
-btnBuscador.addEventListener('click' , filtrarBusqueda);
-buscador.addEventListener('keyup', filtrarBusqueda);
 
-    /*Filtro por precios*/
+/*funcion de buscador de productos */
 
-    function filtrePrecio (){
-    $('#btnRadio').on( 'click', function () {
-        let filtroPrec = document.filterPrecio.precio;
-        for (let i=0; i< filtroPrec.length; i++){
-            if(filterPrecio.precio[i].checked)
-            {
-                const option= filterPrecio.precio[i].value
-                switch (option){}
-                if(option == 1){
-                    const filterPrecio = productos.filter((product=> product.precio < 200));
-                    renderHTML (filterPrecio, contenedor);
-                }
-                if (option == 2){
-                    const filterPrecio = productos.filter((product=> product.precio <= 500));
-                    renderHTML (filterPrecio, contenedor);
-                }
-                if (option == 3){
-                    const filterPrecio = productos.filter((product=> product.precio > 0));
-                    renderHTML (filterPrecio, contenedor);
-                }
-            }
+const filtrarBusqueda = () => {
+  const productosLocalStorage = JSON.parse(localStorage.getItem("productos"));
+  const texto = buscador.value;
+  if (texto == "") {
+    renderHTML(productosLocalStorage, contenedorProductos);
+  } else {
+    const filterProduc = productosLocalStorage.filter((product) => {
+      const productName = product.nombre.toLowerCase();
+      return productName.includes(texto.toLowerCase());
+    });
+    renderHTML(filterProduc, contenedorProductos);
+  }
+};
+
+btnBuscador.addEventListener("click", filtrarBusqueda);
+buscador.addEventListener("keyup", filtrarBusqueda);
+
+/*Filtro por precios*/
+
+function filtrePrecio() {
+  $("#btnRadio").on("click", function () {
+    const productos = JSON.parse(localStorage.getItem("productos"));
+    let filtroPrec = document.filterPrecio.precio;
+    for (let i = 0; i < filtroPrec.length; i++) {
+      if (filterPrecio.precio[i].checked) {
+        const option = filterPrecio.precio[i].value;
+        if (option == 1) {
+          const filterPrecio = productos.filter(
+            (product) => product.precio < 200
+          );
+          renderHTML(filterPrecio, contenedorProductos);
         }
-    })
-}
-filtrePrecio ()
-}
-
-function login (user, pasword ){
-
-    iniciarSesion= localStorage.getItem('usuarios');
-    iniciarSesion= JSON.parse(iniciarSesion);
-    bIniciarSesion = false;
-    for(let i=0; i<iniciarSesion.length ; i++){
-        if(user == iniciarSesion[i].usr && pasword == iniciarSesion[i].pasword)
-        bIniciarSesion= true;
-        sessionStorage.setItem("usuarioLogin", iniciarSesion[i].usr + " " + iniciarSesion[i].pasword);
+        if (option == 2) {
+          const filterPrecio = productos.filter(
+            (product) => product.precio <= 500
+          );
+          renderHTML(filterPrecio, contenedorProductos);
+        }
+        if (option == 3) {
+          const filterPrecio = productos.filter(
+            (product) => product.precio > 0
+          );
+          renderHTML(filterPrecio, contenedorProductos);
+        }
+      }
     }
-    return bIniciarSesion;
+  });
 }
+filtrePrecio();
 
-
-
-
+function login(user, pasword) {
+  iniciarSesion = localStorage.getItem("usuarios");
+  iniciarSesion = JSON.parse(iniciarSesion);
+  bIniciarSesion = false;
+  for (let i = 0; i < iniciarSesion.length; i++) {
+    if (user == iniciarSesion[i].usr && pasword == iniciarSesion[i].pasword)
+      bIniciarSesion = true;
+    sessionStorage.setItem(
+      "usuarioLogin",
+      iniciarSesion[i].usr + " " + iniciarSesion[i].pasword
+    );
+  }
+  return bIniciarSesion;
+}

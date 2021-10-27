@@ -1,4 +1,5 @@
 const esotericos = JSON.parse(dataEsotericos);
-const esotericosDos = document.getElementById ("js-esotericosDos");
+const esotericosDos = document.getElementById("js-esotericosDos");
 
-renderHTML (esotericos, esotericosDos);
+localStorage.setItem("productos", JSON.stringify(esotericos));
+renderHTML(esotericos, esotericosDos);

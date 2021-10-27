@@ -1,6 +1,5 @@
 const anillos = JSON.parse(dataAnillos);
-const anillosDos = document.getElementById ("js-anillosDos");
+const anillosDos = document.getElementById("js-anillosDos");
 
-renderHTML (anillos, anillosDos);
-
-
+localStorage.setItem("productos", JSON.stringify(anillos));
+renderHTML(anillos, anillosDos);
