@@ -31,10 +31,17 @@
         transition: all 1s ease;
         .botonUno{
             color: $color1;
+            .botonOfertas{
+                color: $color1;
+            }
         }
         .botonUno:hover{
             background-color: $bgcolor1;
             color: $color2;
+            .botonOfertas:hover{
+                background-color: $bgcolor1;
+                color: $color2;
+            }
         }
     }
     .inicioUno:hover{

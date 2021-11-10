@@ -5,35 +5,40 @@ let contenedorProductos;
 let cart = [];
 
 const renderHTML = (productos, contenedor) => {
-  console.log(productos);
   contenedorProductos = contenedor;
   contenedorProductos.innerHTML = "";
   if (productos.length > 0) {
     for (let producto of productos) {
       const productoInHTML = `<div class=${producto.clas}>
-                    <img class="src" src="${producto.imgSrc}">
-                    <p>${producto.nombre}</p>
-                    <p>$${producto.precio} + IVA</p>
-                    <label for="Cantidad">Cantidad</label>
-                                    <select name="Cantidad" class="cant" required>
+                                  <img class="src" src="${producto.imgSrc}">
+                                  <p>${producto.nombre}</p>
+                                  <p>$${producto.precio} + IVA</p>
+                                    <select name="Cantidad" class="cant ${producto.id}" required>
+                                        <option value="0" class="cantidad">Cantidad</option>
                                         <option value="1" class="cantidad">1</option>
                                         <option value="2" class="cantidad">2</option>
                                         <option value="3" class="cantidad">3</option>
                                         <option value="4" class="cantidad">4</option>
                                     </select>
-                    <button type="button" class="btn btn-outline-dark botonUno" id="${producto.id}">Añadir al carrito</button>
-                </div>
-                `;
+                                  <button type="button" class="btn btn-outline-dark botonUno" id="${producto.id}">Añadir al carrito</button>
+                              </div>`;
       contenedorProductos.innerHTML += productoInHTML;
     }
   } else {
     contenedorProductos.innerHTML = "<p>No se encontro producto</p>";
   }
   /*Cantidad seleccionada*/
+let quantity =0;
 
-$(".cant").change(function (e) {
-  return (quantity = e.target.value);
+let cant = document.querySelectorAll(".cant");
+cant.forEach((element) => {
+  element.addEventListener("change", respuestaClickCantidad);
 });
+function respuestaClickCantidad(e) {
+  return (quantity = e.target.value);
+}
+
+
 
 /*Funcion de boton Agregado al carrito*/
 
@@ -43,20 +48,32 @@ but.forEach((element) => {
 });
 function respuestaClick(e) {
   const producto = productos.find((element) => element.id == e.target.id);
+
+  
+
   cart = localStorage.getItem("cart");
   if (!cart) {
     cart = [];
   } else {
     cart = JSON.parse(cart);
   }
-  let carro = { cantidad: quantity, producto };
-  console.log(carro);
 
-  cart.push(carro);
-
-  cart = JSON.stringify(cart);
-
-  localStorage.setItem("cart", cart);
+    if (!quantity || quantity == 0){
+      Swal.fire({
+        icon:`error`,
+        title:`Seleccione Cantidad del Producto`,
+    })
+    }else{
+    let carro = { cantidad: quantity, producto };
+  
+    cart.push(carro);
+  
+    cart = JSON.stringify(cart);
+  
+    localStorage.setItem("cart", cart);
+    location.reload();
+    }
+    
 }
 
 };

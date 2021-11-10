@@ -18,14 +18,28 @@ const totalCompra = () => {
                                                   parseInt(produc.cantidad) *
                                                   produc.producto.precio
                                                 } + IVA</p></div>
-                                                <button type="button" class="btn btn-outline-dark botonUno" id="${
+                                                <button type="button" class="btn btn-outline-danger botonDos" id="${
                                                   produc.producto.id
                                                 }">X</button>
     </div>`;
 
       document.getElementById("car").appendChild(contenedorProductos);
     }
+    /*Borrar Producto */
 
+    let but = document.querySelectorAll(".botonDos");
+    but.forEach((element) => {
+    element.addEventListener("click", respuestaClickDelet);
+    });
+  function respuestaClickDelet(e) {
+  const productoEliminado = totalCompraFinal.filter((element) => element.producto.id != e.target.id);
+  
+  let producElimnado = productoEliminado ;
+  console.log(producElimnado);
+
+  localStorage.setItem("cart", JSON.stringify(producElimnado));
+  location.reload();
+}
     /*Total de la compra */
 
     let total = 0;
@@ -34,7 +48,9 @@ const totalCompra = () => {
     });
 
     /* Botton Finalizar Compra */
-
+    
+    if (totalCompraFinal != ""){
+    
     $("#js-borraDatos").append(`<div class="borrarDatosDos">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary modalDos borrarDatosTres" data-bs-toggle="modal"
@@ -71,7 +87,7 @@ const totalCompra = () => {
     for (const produc of totalCompraFinal) {
       $(".carritoFinal").append(`<div>
         <div><p>${produc.producto.nombre} x ${produc.cantidad}</p></div>
-        <div><p>$${parseInt(produc.cantidad) * produc.producto.precio}</p></div>
+        <div><p>$${parseInt(produc.cantidad) * produc.producto.precio} + IVA</p></div>
         </div>
         `);
     }
@@ -88,7 +104,7 @@ const totalCompra = () => {
       );
       $("#btnFinal").show();
     }
-
+    
     /*Consumiento Api Dolar */
 
     const geturl =
@@ -104,7 +120,11 @@ const totalCompra = () => {
         $("#btnFinal").show(); 
         }
     }
+    
     });
+    }else{
+      $("#car").append(`<h2 class="carroVacio">Carrito vacio</h2>`);
+    }
   }
 };
 

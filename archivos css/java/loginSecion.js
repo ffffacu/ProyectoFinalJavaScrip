@@ -14,11 +14,16 @@ $("#loginUser").submit(function (e) {
         })
     }
     else if  (bAcceso == true) {
-        Swal.fire({
-            icon:`success`,
-            title:`Hola ${user}
-                Iniciaste Sesion Correctamente`,
-        })
+        $(`.loginCuatro`).fadeOut("slow")
+        
+        $(".confirmacionOcho").fadeIn("slow", function(){
+            $(`.confirmacionOcho`).prepend(`<main class="confirmacionUno">
+            <div class="confirmacionDos">
+                <img class="confirmacionTres" src="fotos/logos/logo 5.png" alt="Registro correcto">
+                <p class="confirmacionCuatro">Has iniciado sesion correctamente</p>
+            </div>
+        </main>`);
+        });
         ingresar(user)
     }
 });
@@ -35,4 +40,5 @@ function ingresar (user){
         userOnline=JSON.stringify(userOnline);
         sessionStorage.setItem('userOnline', userOnline);
         $("#client").prepend(`Bienvenido ${user}`);
+        sessionStorage.clear();
 }

@@ -12,7 +12,7 @@ section{
             }
         div{
             display: grid;
-        grid-template-columns: 50% 15% 25% 10%;
+        grid-template-columns: 50% 18% 25% 7%;
         grid-template-rows: auto;
         padding: 0.2rem;
         h2{
@@ -22,8 +22,8 @@ section{
         p{
             font-size: 1.5rem;
         }
-        .botonUno{
-            width: 20%;
+        .botonDos{
+            width: 40%;
         }
         }
         
@@ -132,10 +132,17 @@ section{
         transition: all 1s ease;
         .botonUno{
             color: $color1;
+            .botonOfertas{
+                color: $color1;
+            }
         }
         .botonUno:hover{
             background-color: $bgcolor1;
             color: $color2;
+            .botonOfertas{
+                background-color: $bgcolor1;
+            color: $color2;
+            }
         }
     }
     .carroDos:hover{

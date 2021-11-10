@@ -215,7 +215,14 @@ header nav .barraCuatro {
 .inicioTres .inicioUno .botonUno {
   color: #02045f;
 }
+.inicioTres .inicioUno .botonUno .botonOfertas {
+  color: #02045f;
+}
 .inicioTres .inicioUno .botonUno:hover {
+  background-color: #51C4D3;
+  color: #ffffff;
+}
+.inicioTres .inicioUno .botonUno:hover .botonOfertas:hover {
   background-color: #51C4D3;
   color: #ffffff;
 }
@@ -313,7 +320,7 @@ section .carroUno .carroTres .carroVacio {
 }
 section .carroUno .carroTres div {
   display: grid;
-  grid-template-columns: 50% 15% 25% 10%;
+  grid-template-columns: 50% 18% 25% 7%;
   grid-template-rows: auto;
   padding: 0.2rem;
 }
@@ -324,8 +331,8 @@ section .carroUno .carroTres div h2 {
 section .carroUno .carroTres div p {
   font-size: 1.5rem;
 }
-section .carroUno .carroTres div .botonUno {
-  width: 20%;
+section .carroUno .carroTres div .botonDos {
+  width: 40%;
 }
 section .carroUno .borrarDatos .borrarDatosDos {
   padding: 1%;
@@ -433,7 +440,14 @@ section .carroUno .borrarDatos .borrarDatosDos .modalTres .totalCompra .btonFina
 .carroCuatro .carroDos .botonUno {
   color: #02045f;
 }
+.carroCuatro .carroDos .botonUno .botonOfertas {
+  color: #02045f;
+}
 .carroCuatro .carroDos .botonUno:hover {
+  background-color: #51C4D3;
+  color: #ffffff;
+}
+.carroCuatro .carroDos .botonUno:hover .botonOfertas {
   background-color: #51C4D3;
   color: #ffffff;
 }
@@ -1190,6 +1204,15 @@ section .carroUno .borrarDatos .borrarDatosDos .modalTres .totalCompra .btonFina
   main .politicasUno .tiempoUno img {
     height: 100px;
   }
+  main section .carroUno .carroTres div {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30% 30% 30% 20%;
+    padding: 0.5rem;
+  }
+  main section .carroUno .borrarDatos {
+    margin: 1rem;
+  }
   main .carroCuatro .carroDos:hover {
     transform: scale(1.1, 1.1);
   }
@@ -1680,6 +1703,10 @@ hr {
   grid-area: asaide;
   background-color: #D8E3E7;
   border-right: 1px solid;
+  padding: 10px;
+}
+.mainAsaide .asaidePrincipal .filtroBuscar {
+  color: black;
 }
 .mainAsaide .anilloUno {
   grid-area: menu;

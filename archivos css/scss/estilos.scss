@@ -143,6 +143,10 @@ hr {
     grid-area: asaide;
     background-color:#D8E3E7;
     border-right: 1px solid;
+    padding: 10px;
+        .filtroBuscar{
+            color: black;
+        }
     }
     .anilloUno{
         grid-area: menu;

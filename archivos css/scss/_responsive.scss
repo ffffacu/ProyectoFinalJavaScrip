@@ -328,6 +328,22 @@
                 }
             }
         }
+
+        section{
+            .carroUno{
+                .carroTres{
+                    div{
+                        display: grid;
+                        grid-template-columns: auto;
+                        grid-template-rows: 30% 30% 30% 20%;
+                        padding: 0.5rem;
+                    }
+                }
+                .borrarDatos{
+                    margin: 1rem;
+                }
+            }
+        }
         .carroCuatro{
                 .carroDos:hover{
                     transform: scale(1.1,1.1);
